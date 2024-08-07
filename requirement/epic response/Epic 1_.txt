@@ -1,0 +1,36 @@
+Epic 1: User Authentication and Authorization
+
+Feature 1.1: Login Page
+User story 1.1.1: As a user, I want to be able to access the login page to enter my credentials.
+
+Acceptance criteria:
+1. The login page should have input fields for username and password.
+2. The login page should have a "Login" button to submit the credentials.
+3. The login page should have a "Forgot Password" link for password recovery.
+4. The login page should display appropriate error messages for invalid credentials.
+
+Feature 1.2: User Authentication
+User story 1.2.1: As a user, I want to be able to authenticate my credentials to access the system.
+
+Acceptance criteria:
+1. Upon entering valid credentials and clicking the "Login" button, the user should be authenticated.
+2. Upon entering invalid credentials, the user should not be authenticated and should see an error message.
+3. The system should enforce password complexity rules during authentication.
+
+Feature 1.3: User Authorization
+User story 1.3.1: As a user, I want to be authorized to access specific functionalities based on my role.
+
+Acceptance criteria:
+1. Users with the role of "Admin" should have access to all functionalities.
+2. Users with the role of "User" should have limited access to certain functionalities.
+3. Unauthorized users should not be able to access restricted functionalities.
+4. The system should enforce role-based access control for different user roles.
+
+UI for Warranty Product Field:
+User story 1.3.2: As a user, I want to input warranty product details for a policyholder.
+
+Acceptance criteria:
+1. The UI should include fields for Policyholder's Name, Address Line 1, Address Line 2, City, State, Country, Postal Code, Mobile Number, Email, VIN, License Plate, Make, Model, Mileage, First Registration Date, and Maker Warranty End Date.
+2. All fields should have appropriate validation rules (e.g., required fields, format validation).
+3. The system should save the warranty product details accurately in the database.
+4. The UI should provide feedback on successful submission of warranty product details.

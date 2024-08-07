@@ -1,0 +1,81 @@
+To automate the regression test cases using BDD framework with Java Selenium, we can use Cucumber for writing feature files and step definitions. Below is an example implementation for the provided regression test cases:
+
+1. **Regression Case 1: Confirming the selected coverage plan**
+
+**Feature File (confirm_coverage_plan.feature):**
+```gherkin
+Feature: Confirming the selected coverage plan
+
+Scenario: User receives confirmation of the selected coverage plan
+  Given User has selected a coverage plan
+  When User confirms the selected coverage plan
+  Then User should receive confirmation of the selected coverage plan
+```
+
+**Step Definitions (ConfirmCoveragePlanSteps.java):**
+```java
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
+public class ConfirmCoveragePlanSteps {
+
+    @Given("User has selected a coverage plan")
+    public void user_has_selected_coverage_plan() {
+        // Code to select a coverage plan
+    }
+
+    @When("User confirms the selected coverage plan")
+    public void user_confirms_coverage_plan() {
+        // Code to confirm the selected coverage plan
+    }
+
+    @Then("User should receive confirmation of the selected coverage plan")
+    public void user_receives_confirmation() {
+        // Code to verify confirmation message
+    }
+}
+```
+
+2. **Regression Case 2: Changing the selected coverage plan**
+
+**Feature File (change_coverage_plan.feature):**
+```gherkin
+Feature: Changing the selected coverage plan
+
+Scenario: User changes the selected coverage plan
+  Given User has selected a coverage plan
+  When User changes the selected coverage plan
+  Then User should see the updated coverage plan
+```
+
+**Step Definitions (ChangeCoveragePlanSteps.java):**
+```java
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
+public class ChangeCoveragePlanSteps {
+
+    @Given("User has selected a coverage plan")
+    public void user_has_selected_coverage_plan() {
+        // Code to select a coverage plan
+    }
+
+    @When("User changes the selected coverage plan")
+    public void user_changes_coverage_plan() {
+        // Code to change the selected coverage plan
+    }
+
+    @Then("User should see the updated coverage plan")
+    public void user_sees_updated_coverage_plan() {
+        // Code to verify the updated coverage plan
+    }
+}
+```
+
+In the step definitions, you can implement the Selenium WebDriver code to interact with the web elements and perform the necessary actions for selecting, confirming, and changing the coverage plans.
+
+You can run these BDD tests using a test runner class that initializes the Cucumber options and runs the feature files. Make sure to include the necessary dependencies for Cucumber and Selenium WebDriver in your project.
+
+This setup allows you to automate the regression test cases in a structured and readable manner using BDD principles with Java and Selenium.

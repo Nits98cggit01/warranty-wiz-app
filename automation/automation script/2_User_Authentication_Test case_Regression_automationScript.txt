@@ -1,0 +1,108 @@
+To automate the regression test cases using a BDD framework with Java and Selenium, we can use Cucumber for writing feature files and Gherkin syntax to define the test scenarios. Below is an example implementation of the provided regression test cases:
+
+1. Add the necessary dependencies in your Maven `pom.xml` file:
+
+```xml
+<dependencies>
+    <!-- Selenium WebDriver -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>3.141.59</version>
+    </dependency>
+    
+    <!-- Cucumber dependencies -->
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-java</artifactId>
+        <version>6.10.4</version>
+    </dependency>
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-junit</artifactId>
+        <version>6.10.4</version>
+    </dependency>
+</dependencies>
+```
+
+2. Create a feature file `authentication.feature` with the following content:
+
+```gherkin
+Feature: User Authentication
+  Scenario: Verify successful authentication with valid credentials
+    Given User is on the login page
+    When User enters valid username and password
+    And User clicks on the "Login" button
+    Then User should be authenticated successfully
+
+  Scenario: Verify authentication failure with invalid credentials
+    Given User is on the login page
+    When User enters invalid username and password
+    And User clicks on the "Login" button
+    Then User should not be authenticated and should see an error message
+```
+
+3. Create step definitions for the feature file in a Java class:
+
+```java
+package stepDefinitions;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
+public class AuthenticationSteps {
+    
+    @Given("User is on the login page")
+    public void userIsOnLoginPage() {
+        // Add code to navigate to the login page
+    }
+
+    @When("User enters valid username and password")
+    public void userEntersValidCredentials() {
+        // Add code to enter valid credentials
+    }
+
+    @When("User enters invalid username and password")
+    public void userEntersInvalidCredentials() {
+        // Add code to enter invalid credentials
+    }
+
+    @When("User clicks on the {string} button")
+    public void userClicksOnButton(String buttonName) {
+        // Add code to click on the specified button
+    }
+
+    @Then("User should be authenticated successfully")
+    public void userAuthenticatedSuccessfully() {
+        // Add assertion for successful authentication
+    }
+
+    @Then("User should not be authenticated and should see an error message")
+    public void userNotAuthenticated() {
+        // Add assertion for authentication failure and error message
+    }
+}
+```
+
+4. Create a test runner class `TestRunner`:
+
+```java
+package runners;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = "src/test/resources/features",
+                 glue = "stepDefinitions")
+public class TestRunner {
+}
+```
+
+5. Implement the Selenium WebDriver code in the step definitions to interact with the login page elements and perform the necessary actions.
+
+6. Run the test by executing the `TestRunner` class as a JUnit test.
+
+This setup allows you to automate the regression test cases using a BDD framework with Java and Selenium, ensuring that the authentication scenarios are tested effectively.

@@ -1,0 +1,20 @@
+Based on the provided test cases, the regression test cases focusing on key scenarios that cover positive flow only can be identified as follows:
+
+Regression Test Case 2:
+Test Description: Verify that the weightage configuration is saved and applied to the rating calculation process.
+Precondition: Weightage for each factor is configured.
+Test Steps:
+- Trigger a rating calculation process.
+Expected result: The configured weightage is applied to the calculation process.
+
+Regression Test Case 4:
+Test Description: Verify that changes in factor weightage reflect in real-time on the rating calculation results.
+Precondition: Weightage for each factor is configured.
+Test Steps:
+- Modify the weightage of a factor.
+- Trigger a rating calculation process.
+Expected result: The rating calculation reflects the updated weightage for the modified factor.
+
+These two regression test cases cover critical scenarios related to the functionality of the factor weightage configuration feature and its impact on the rating calculation process. They ensure that the core functionality remains intact and performs as expected even after changes or updates.
+
+These regression test cases represent 20% of the total test cases provided (2 out of 10), meeting the requirement for the regression suite size.

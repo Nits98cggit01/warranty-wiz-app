@@ -1,0 +1,114 @@
+To automate the provided regression test cases using a BDD framework with Java Selenium, we can use Cucumber for writing feature files and Gherkin syntax to define the scenarios. Below are the steps to create automation scripts for the regression test cases:
+
+1. Create Feature Files:
+Create feature files for each regression test case with the scenarios defined in Gherkin syntax.
+
+RegressionTestCase1.feature:
+```gherkin
+Feature: Add additional coverage options - Multiple options
+
+Scenario: Policyholder adds multiple additional coverage options
+  Given Policyholder is logged into the system
+  When Policyholder navigates to the coverage customization section
+  And Policyholder adds multiple additional coverage options
+  Then All additional coverage options are successfully added
+```
+
+RegressionTestCase2.feature:
+```gherkin
+Feature: Adjust coverage duration - Minimum and Maximum values
+
+Scenario: Policyholder adjusts coverage duration to minimum and maximum values
+  Given Policyholder is logged into the system
+  When Policyholder selects a coverage option
+  And Policyholder adjusts the coverage duration to the minimum value
+  Then The coverage duration is updated to the minimum value
+  When Policyholder adjusts the coverage duration to the maximum value
+  Then The coverage duration is updated to the maximum value
+```
+
+2. Create Step Definition Classes:
+Create step definition classes to map the steps defined in the feature files to the actual automation code using Java Selenium.
+
+RegressionTestCase1StepDefinitions.java:
+```java
+public class RegressionTestCase1StepDefinitions {
+
+    @Given("Policyholder is logged into the system")
+    public void policyholderIsLoggedIn() {
+        // Implement login functionality
+    }
+
+    @When("Policyholder navigates to the coverage customization section")
+    public void navigateToCoverageCustomizationSection() {
+        // Implement navigation to coverage customization section
+    }
+
+    @And("Policyholder adds multiple additional coverage options")
+    public void addMultipleCoverageOptions() {
+        // Implement adding multiple coverage options
+    }
+
+    @Then("All additional coverage options are successfully added")
+    public void verifyCoverageOptionsAdded() {
+        // Implement verification of added coverage options
+    }
+}
+```
+
+RegressionTestCase2StepDefinitions.java:
+```java
+public class RegressionTestCase2StepDefinitions {
+
+    @Given("Policyholder is logged into the system")
+    public void policyholderIsLoggedIn() {
+        // Implement login functionality
+    }
+
+    @When("Policyholder selects a coverage option")
+    public void selectCoverageOption() {
+        // Implement selecting a coverage option
+    }
+
+    @And("Policyholder adjusts the coverage duration to the minimum value")
+    public void adjustCoverageDurationToMinimum() {
+        // Implement adjusting coverage duration to minimum value
+    }
+
+    @Then("The coverage duration is updated to the minimum value")
+    public void verifyCoverageDurationMinimum() {
+        // Implement verification of coverage duration minimum value
+    }
+
+    @And("Policyholder adjusts the coverage duration to the maximum value")
+    public void adjustCoverageDurationToMaximum() {
+        // Implement adjusting coverage duration to maximum value
+    }
+
+    @Then("The coverage duration is updated to the maximum value")
+    public void verifyCoverageDurationMaximum() {
+        // Implement verification of coverage duration maximum value
+    }
+}
+```
+
+3. Create Test Runner Class:
+Create a test runner class to execute the feature files and link them to the step definition classes.
+
+TestRunner.java:
+```java
+import org.junit.runner.RunWith;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = {"src/test/resources/features"},
+                 glue = {"com.yourpackage.stepdefinitions"})
+public class TestRunner {
+}
+```
+
+4. Implement Automation Code:
+Implement the automation code in the step definition classes to interact with the application using Java Selenium commands.
+
+This structure allows for easy maintenance and readability of the automation scripts. You can further enhance the automation scripts by adding more detailed validations and error handling as needed.

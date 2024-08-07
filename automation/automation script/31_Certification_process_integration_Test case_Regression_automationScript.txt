@@ -1,0 +1,82 @@
+To automate the regression test cases using BDD framework with Java Selenium, we can use Cucumber for writing feature files and Gherkin syntax to define the scenarios. Below is an example of how the automation scripts can be structured:
+
+1. Create a feature file for the regression test cases:
+
+LoggingCertificationActivities.feature
+```gherkin
+Feature: Logging Certification Activities
+
+  Scenario: Verify that the system maintains a log of certification activities for auditing purposes
+    Given Certification activities are performed
+    When System logs all certification activities
+    Then Certification activities are logged for auditing purposes
+
+  Scenario: Verify that the audit log accurately records all certification activities
+    Given Certification activities have been performed
+    When Verify the audit log for accuracy and completeness
+    Then All certification activities are correctly logged in the audit log
+```
+
+2. Create step definitions for the feature file:
+
+LoggingCertificationActivitiesSteps.java
+```java
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class LoggingCertificationActivitiesSteps {
+
+    @Given("Certification activities are performed")
+    public void certificationActivitiesPerformed() {
+        // Implement code to perform certification activities
+    }
+
+    @When("System logs all certification activities")
+    public void systemLogsCertificationActivities() {
+        // Implement code to log certification activities
+    }
+
+    @Then("Certification activities are logged for auditing purposes")
+    public void certificationActivitiesLogged() {
+        // Implement code to verify certification activities are logged
+    }
+
+    @Given("Certification activities have been performed")
+    public void certificationActivitiesPerformedAlready() {
+        // Implement code to indicate certification activities have been performed
+    }
+
+    @When("Verify the audit log for accuracy and completeness")
+    public void verifyAuditLog() {
+        // Implement code to verify audit log accuracy and completeness
+    }
+
+    @Then("All certification activities are correctly logged in the audit log")
+    public void allCertificationActivitiesLogged() {
+        // Implement code to verify all certification activities are logged in the audit log
+    }
+}
+```
+
+3. Create a TestRunner class to execute the feature file:
+
+TestRunner.java
+```java
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features = "src/test/resources/features",
+        glue = {"stepDefinitions"},
+        plugin = {"pretty", "html:target/cucumber-reports"}
+)
+public class TestRunner {
+}
+```
+
+4. Implement the automation logic within the step definitions to interact with the application using Selenium WebDriver API.
+
+This setup will allow you to automate the regression test cases using the BDD framework with Java Selenium. You can run the TestRunner class to execute the feature file and validate the scenarios defined in the test cases.

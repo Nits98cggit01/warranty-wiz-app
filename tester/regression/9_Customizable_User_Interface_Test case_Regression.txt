@@ -1,0 +1,19 @@
+Based on the provided test cases focusing on positive scenarios for the UI Customization and Theme Selection feature, the regression test cases can be identified as follows:
+
+Regression Test Case 1:
+Test Description: Verify that the customized UI settings are saved for future visits.
+Precondition: User is logged in and has previously customized the UI.
+Test Steps:
+- Log out and log back in.
+Expected result: The UI should retain the previously selected color scheme, font style, size, and background image.
+
+Regression Test Case 2:
+Test Description: Verify that the policyholder can reset the UI customization settings to default.
+Precondition: User is logged in and has customized the UI.
+Test Steps:
+- Click on the reset button.
+Expected result: The UI should revert to the default color scheme, font style, size, and background image.
+
+These two regression test cases cover critical functionalities related to saving and resetting UI customization settings, ensuring that the application maintains expected behavior over time. They also address the need to retain user preferences and provide a fallback option to revert to default settings.
+
+These regression test cases represent 20% of the total test cases provided (2 out of 10), aligning with the requirement to keep regression testing at 20% of the total test suite.

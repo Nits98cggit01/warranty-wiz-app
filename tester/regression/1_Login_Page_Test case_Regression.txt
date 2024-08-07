@@ -1,0 +1,21 @@
+Based on the provided test cases focusing on positive scenarios, the regression test cases can be identified as follows:
+
+Regression Test Case 1
+Test Case Name: Verify presence of input fields for username and password
+Test Description: Verify that the login page still contains input fields for username and password after any updates or changes.
+Precondition: User is on the login page.
+Test Steps:
+- Check for the presence of username input field.
+- Check for the presence of password input field.
+Expected result: Both username and password input fields are displayed on the login page.
+
+Regression Test Case 2
+Test Case Name: Verify successful login
+Test Description: Verify that the user can still successfully login with valid credentials after any updates or changes.
+Precondition: User is on the login page.
+Test Steps:
+- Enter valid username and password.
+- Click on the "Login" button.
+Expected result: User is successfully logged in and directed to the home page.
+
+These regression test cases focus on critical functionalities related to the presence of input fields and successful login, ensuring that these key scenarios continue to work as expected even after modifications or updates to the system.

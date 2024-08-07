@@ -1,0 +1,78 @@
+To automate the regression test cases using BDD framework with Java Selenium, we can use Cucumber for writing feature files and step definitions. Below is an example implementation of the automation scripts for the provided regression test cases:
+
+1. Create a feature file for the regression test cases (e.g., regression_test.feature):
+
+```gherkin
+Feature: Regression Test Cases
+
+  Scenario: Verify presence of input fields for username and password
+    Given User is on the login page
+    Then Verify the presence of username input field
+    And Verify the presence of password input field
+
+  Scenario: Verify successful login
+    Given User is on the login page
+    When User enters valid username and password
+    And User clicks on the "Login" button
+    Then User is successfully logged in and directed to the home page
+```
+
+2. Create step definitions for the feature file:
+
+```java
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class StepDefinitions {
+
+    WebDriver driver;
+
+    @Given("User is on the login page")
+    public void userIsOnLoginPage() {
+        System.setProperty("webdriver.chrome.driver", "path_to_chromedriver");
+        driver = new ChromeDriver();
+        driver.get("url_of_login_page");
+    }
+
+    @Then("Verify the presence of username input field")
+    public void verifyUsernameInputField() {
+        WebElement usernameField = driver.findElement(By.id("username"));
+        assert usernameField.isDisplayed();
+    }
+
+    @Then("Verify the presence of password input field")
+    public void verifyPasswordInputField() {
+        WebElement passwordField = driver.findElement(By.id("password"));
+        assert passwordField.isDisplayed();
+    }
+
+    @When("User enters valid username and password")
+    public void enterValidCredentials() {
+        WebElement usernameField = driver.findElement(By.id("username"));
+        usernameField.sendKeys("valid_username");
+
+        WebElement passwordField = driver.findElement(By.id("password"));
+        passwordField.sendKeys("valid_password");
+    }
+
+    @When("User clicks on the {string} button")
+    public void clickButton(String buttonName) {
+        WebElement loginButton = driver.findElement(By.id("loginButton"));
+        loginButton.click();
+    }
+
+    @Then("User is successfully logged in and directed to the home page")
+    public void verifySuccessfulLogin() {
+        // Add assertions to verify successful login and redirection to home page
+    }
+}
+```
+
+3. Run the Cucumber test runner to execute the regression test cases.
+
+This is a basic example of how you can automate the provided regression test cases using BDD framework with Java Selenium. You can enhance the scripts by adding more validations, error handling, reporting, and other necessary functionalities based on your requirements.

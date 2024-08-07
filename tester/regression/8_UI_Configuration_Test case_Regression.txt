@@ -1,0 +1,19 @@
+Based on the provided test cases focusing on positive scenarios, the regression test cases can be identified as follows:
+
+Regression Test Case 1:
+Test Case Name: Rearrange Fields Order - Revert Changes
+Test Description: Verify that the system administrator can revert the rearranged order of fields in the UI.
+Precondition: System administrator is logged in and has rearranged the order of fields in the UI.
+Test Steps:
+- Click on the 'Undo' button to revert the rearranged order of fields.
+Expected result: The field order should be reverted to the original state before rearrangement.
+
+Regression Test Case 2:
+Test Case Name: Immediate Reflection of Changes - Page Refresh Check
+Test Description: Verify that changes made to the UI configuration are reflected immediately without the need for a page refresh.
+Precondition: System administrator is logged in and has made changes to the UI configuration.
+Test Steps:
+- Verify that the UI updates instantly without the need for a page refresh.
+Expected result: The UI should update instantly to reflect the changes made by the administrator without any page refresh.
+
+These regression test cases focus on critical functionalities related to field rearrangement and immediate reflection of changes, ensuring that these key scenarios continue to work correctly even after new changes are implemented.

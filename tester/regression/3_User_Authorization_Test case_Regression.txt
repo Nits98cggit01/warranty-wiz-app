@@ -1,0 +1,22 @@
+Based on the provided test cases, the regression cases focusing on key scenarios covering positive flow only can be identified as follows:
+
+Regression Case 1:
+Test Case Name: Admin Access - All Functionalities
+Test Description: Verify that users with the role of "Admin" have access to all functionalities.
+Precondition: User is logged in as an Admin.
+Test Steps:
+- Navigate to each functionality.
+- Verify access for each functionality.
+- Logout and login as a User to confirm restricted access.
+Expected result: Admin should have access to all functionalities.
+
+Regression Case 2:
+Test Case Name: Role-Based Access Control Enforcement
+Test Description: Verify that the system enforces role-based access control for different user roles.
+Precondition: Users with different roles are registered in the system.
+Test Steps:
+- Assign different roles to users.
+- Verify access based on roles.
+Expected result: System should enforce role-based access control.
+
+These two regression cases cover key scenarios related to user roles, access control, and system behavior under different role settings. They represent critical functionalities that need to be validated to ensure the stability and correctness of the user authentication and authorization system.

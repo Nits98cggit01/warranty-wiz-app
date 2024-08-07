@@ -1,0 +1,21 @@
+Based on the provided test cases focusing on positive scenarios for the "Reliability Report generation" feature, we can identify the regression test cases as follows:
+
+Regression Test Case 1:
+Test Case Name: Generate Reliability Report with Uptime Metric
+Test Description: Verify that the reliability report includes the uptime metric.
+Precondition: System is up and running without any issues.
+Test Steps:
+- Generate a reliability report.
+- Check if the report contains the uptime metric.
+Expected result: The reliability report should display the uptime metric.
+
+Regression Test Case 2:
+Test Case Name: Generate Reliability Report with Response Times Metric
+Test Description: Verify that the reliability report includes the response times metric.
+Precondition: System is processing requests within expected time limits.
+Test Steps:
+- Generate a reliability report.
+- Check if the report contains the response times metric.
+Expected result: The reliability report should display the response times metric.
+
+These two regression test cases cover key functionalities related to uptime, response times, and are critical for ensuring the reliability of the system. They represent 20% of the total test cases provided (6 test cases), as per the requirement.

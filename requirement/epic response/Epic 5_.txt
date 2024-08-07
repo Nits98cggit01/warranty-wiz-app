@@ -1,0 +1,29 @@
+Epic 5: Vehicle Data Management
+
+Feature 5.1: Fetching vehicle model factors
+
+User story 5.1.1: As a user, I want to be able to fetch vehicle model factors so that I can analyze and compare different vehicle models effectively.
+
+Acceptance criteria:
+1. The system should provide a list of available vehicle models with their corresponding factors such as make, model, year, and price.
+2. The user should be able to filter and search for specific vehicle models based on different criteria.
+3. The system should display accurate and up-to-date information for each vehicle model factor.
+
+Feature 5.2: API integration for vehicle data
+
+User story 5.2.1: As a developer, I want to integrate APIs for fetching vehicle data so that I can access real-time information about vehicles.
+
+Acceptance criteria:
+1. The system should have APIs that allow developers to retrieve vehicle data such as make, model, year, and price.
+2. The APIs should be well-documented and easy to integrate into external applications.
+3. The system should handle API requests efficiently and provide timely responses.
+
+Feature 5.3: Data validation and normalization
+
+User story 5.3.1: As a user filling out warranty product information, I want the data to be validated and normalized to ensure accuracy and consistency.
+
+Acceptance criteria:
+1. The system should validate all input fields for the warranty product form, including Policyholder's Name, Address, City, State, Country, Postal Code, Mobile Number, Email, VIN, License Plate, Make, Model, Mileage, First Registration Date, and Maker Warranty End Date.
+2. Data validation should include checks for required fields, data formats (e.g., email validation), and length restrictions.
+3. The system should normalize data such as converting input to uppercase, formatting dates consistently, and standardizing phone numbers.
+4. Error messages should be displayed for any validation failures, guiding users on how to correct the input.

@@ -1,0 +1,21 @@
+Based on the provided test cases, the regression test cases focusing on key scenarios that cover positive flow only can be identified as follows:
+
+Regression Test Case 1:
+Test Case Name: Data Accuracy Test
+Test Description: Verify that reporting services can pull data from the database accurately.
+Precondition: Database with sample data is available.
+Test Steps:
+- Pull data using reporting services.
+- Compare the pulled data with the actual data in the database.
+Expected result: The pulled data matches the data in the database.
+
+Regression Test Case 2:
+Test Case Name: Customization Test
+Test Description: Verify that reports can be customized based on user preferences.
+Precondition: User preferences for report customization are defined.
+Test Steps:
+- Customize a report based on user preferences.
+- Verify that the report reflects the customized settings.
+Expected result: The report displays according to the user preferences.
+
+These two regression test cases cover essential functionalities related to data accuracy and report customization, which are critical aspects of the Reporting and Analysis Enhancements feature. These cases ensure that core functionalities are working as expected even after new changes or updates are implemented.

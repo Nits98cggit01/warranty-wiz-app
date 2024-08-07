@@ -1,0 +1,93 @@
+Epic name: UI Customization and Theme Selection
+Feature name: UI Configuration
+Feature id: 3.1
+
+Test Case 1
+Test Case Name: Rearrange Fields Order
+Test Description: Verify that the system administrator can rearrange the order of the fields in the UI.
+Precondition: System administrator is logged in and has access to UI configuration.
+Test Steps:
+- Drag and drop a field to a new position in the UI.
+- Verify that the field order is updated correctly.
+Expected result: The field order should be rearranged as per the administrator's action.
+
+Test Case 2
+Test Case Name: Add New Field
+Test Description: Verify that the system administrator can add a new field to the UI.
+Precondition: System administrator is logged in and has access to UI configuration.
+Test Steps:
+- Click on the 'Add Field' button.
+- Enter the details for the new field and save the configuration.
+Expected result: The new field should be added to the UI and displayed correctly.
+
+Test Case 3
+Test Case Name: Remove Existing Field
+Test Description: Verify that the system administrator can remove an existing field from the UI.
+Precondition: System administrator is logged in and has access to UI configuration.
+Test Steps:
+- Select a field to be removed.
+- Click on the 'Remove Field' button.
+Expected result: The selected field should be removed from the UI.
+
+Test Case 4
+Test Case Name: Immediate Reflection of Changes
+Test Description: Verify that changes made to the UI configuration are reflected immediately.
+Precondition: System administrator is logged in and has access to UI configuration.
+Test Steps:
+- Make a change to the UI configuration.
+- Verify that the change is reflected without the need for a page refresh.
+Expected result: The UI should update instantly to reflect the changes made by the administrator.
+
+Test Case 5
+Test Case Name: Edge Case - Reordering All Fields
+Test Description: Verify that the system administrator can reorder all fields in the UI.
+Precondition: System administrator is logged in and has access to UI configuration.
+Test Steps:
+- Drag and drop all fields to new positions in the UI.
+- Verify that all fields are reordered correctly.
+Expected result: All fields should be rearranged as per the administrator's actions.
+
+Test Case 6
+Test Case Name: Edge Case - Adding Multiple New Fields
+Test Description: Verify that the system administrator can add multiple new fields to the UI.
+Precondition: System administrator is logged in and has access to UI configuration.
+Test Steps:
+- Add multiple new fields to the UI.
+- Verify that all new fields are displayed correctly.
+Expected result: All newly added fields should be visible and functional in the UI.
+
+Test Case 7
+Test Case Name: Edge Case - Removing All Fields
+Test Description: Verify that the system administrator can remove all existing fields from the UI.
+Precondition: System administrator is logged in and has access to UI configuration.
+Test Steps:
+- Remove all existing fields from the UI.
+- Verify that the UI is empty of fields.
+Expected result: The UI should not display any fields after all existing fields are removed.
+
+Test Case 8
+Test Case Name: Edge Case - Rapid Configuration Changes
+Test Description: Verify that rapid changes to the UI configuration are handled correctly.
+Precondition: System administrator is logged in and has access to UI configuration.
+Test Steps:
+- Make multiple rapid changes to the UI configuration.
+- Verify that each change is applied correctly without conflicts.
+Expected result: The UI should update smoothly and accurately for each rapid configuration change.
+
+Test Case 9
+Test Case Name: Edge Case - Concurrent Configuration Changes
+Test Description: Verify that concurrent configuration changes by multiple administrators are handled correctly.
+Precondition: Multiple system administrators are logged in and making configuration changes simultaneously.
+Test Steps:
+- Make conflicting changes to the UI configuration.
+- Verify that changes are applied based on the order of submission.
+Expected result: The UI should reflect the changes made by each administrator in the correct order.
+
+Test Case 10
+Test Case Name: Edge Case - Undo Configuration Changes
+Test Description: Verify that the system administrator can undo configuration changes.
+Precondition: System administrator is logged in and has access to UI configuration.
+Test Steps:
+- Make a configuration change.
+- Click on the 'Undo' button.
+Expected result: The previous configuration should be restored after undoing the change.

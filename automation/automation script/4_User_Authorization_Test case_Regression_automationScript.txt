@@ -1,0 +1,61 @@
+To automate the regression test cases using BDD framework with Java Selenium, we can use Cucumber for writing feature files and step definitions. Below is an example implementation of the automation scripts for the provided regression test cases:
+
+1. Create a feature file for the regression test cases:
+
+```gherkin
+Feature: Warranty Product Details
+  Scenario: Verify presence of required fields in UI
+    Given User is on the warranty product details input screen
+    When User checks for the presence of required fields
+    Then All the required fields are displayed
+
+  Scenario: Verify accurate saving of warranty product details in the database
+    Given User has entered valid warranty product details in the UI
+    When User submits the form with valid data
+    Then Warranty product details are accurately saved in the database
+```
+
+2. Create step definitions for the feature file:
+
+```java
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
+public class WarrantyProductDetailsSteps {
+
+    @Given("User is on the warranty product details input screen")
+    public void userIsOnWarrantyProductDetailsScreen() {
+        // Code to navigate to the warranty product details input screen
+    }
+
+    @When("User checks for the presence of required fields")
+    public void userChecksForRequiredFields() {
+        // Code to check for the presence of required fields
+    }
+
+    @Then("All the required fields are displayed")
+    public void verifyRequiredFieldsDisplayed() {
+        // Code to verify all required fields are displayed
+    }
+
+    @Given("User has entered valid warranty product details in the UI")
+    public void userEntersValidDetails() {
+        // Code to enter valid warranty product details in the UI
+    }
+
+    @When("User submits the form with valid data")
+    public void userSubmitsForm() {
+        // Code to submit the form with valid data
+    }
+
+    @Then("Warranty product details are accurately saved in the database")
+    public void verifyDetailsSavedInDatabase() {
+        // Code to check the database for saved warranty product details
+    }
+}
+```
+
+3. Implement the automation scripts using Java Selenium to interact with the UI elements and database.
+
+This is a basic example to get you started with automating the regression test cases using BDD framework with Java Selenium. You can further enhance the scripts by adding more validations, error handling, and reporting as per your requirements.

@@ -1,0 +1,4 @@
+Epic 5:
+- Feature 5.1: Fetching vehicle model factors
+- Feature 5.2: API integration for vehicle data
+- Feature 5.3: Data validation and normalization

@@ -1,0 +1,9 @@
+Based on the provided test cases focusing on positive scenarios, the following regression cases can be identified:
+
+1. **Regression Case 1: Confirming the selected coverage plan**
+   - **Test Case 3:** User receives confirmation of the selected coverage plan
+
+2. **Regression Case 2: Changing the selected coverage plan**
+   - **Test Case 10:** User selects a coverage plan and then changes their selection
+
+These regression cases cover key functionalities related to confirming and changing the selected coverage plan, which are critical aspects of the coverage selection process. By focusing on these cases during regression testing, we can ensure that the core functionality of selecting and confirming coverage plans is working as expected even after new changes or updates are implemented.

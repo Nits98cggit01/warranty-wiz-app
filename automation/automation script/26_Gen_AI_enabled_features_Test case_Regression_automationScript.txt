@@ -1,0 +1,68 @@
+To automate the regression test cases using a BDD framework with Java Selenium, we can use Cucumber for writing feature files and Gherkin syntax to define the scenarios. Below is an example of how you can create automation scripts for the provided regression test cases:
+
+1. Create a feature file for the regression test cases:
+```gherkin
+Feature: AI Feature Generation for Warranty Product
+
+  Scenario: AI feature generation based on provided data fields
+    Given Data fields for warranty product are available
+    When Input data fields for warranty product are provided
+    And AI feature generation process is triggered
+    Then Verify the generated AI-enabled features
+
+  Scenario: Accuracy of AI-enabled features
+    Given AI feature generation process has been completed
+    When Review the generated AI-enabled features
+    Then Verify the relevance of the features to the warranty product field
+```
+
+2. Create step definitions for the feature file:
+```java
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
+public class AIFeatureGenerationSteps {
+
+    @Given("Data fields for warranty product are available")
+    public void dataFieldsAvailable() {
+        // Implement code to ensure data fields are available
+    }
+
+    @When("Input data fields for warranty product are provided")
+    public void inputDataFields() {
+        // Implement code to input data fields
+    }
+
+    @When("AI feature generation process is triggered")
+    public void triggerAIFeatureGeneration() {
+        // Implement code to trigger AI feature generation process
+    }
+
+    @Then("Verify the generated AI-enabled features")
+    public void verifyGeneratedFeatures() {
+        // Implement code to verify generated AI-enabled features
+    }
+
+    @Given("AI feature generation process has been completed")
+    public void aiFeatureGenerationCompleted() {
+        // Implement code to ensure AI feature generation process is completed
+    }
+
+    @When("Review the generated AI-enabled features")
+    public void reviewGeneratedFeatures() {
+        // Implement code to review generated AI-enabled features
+    }
+
+    @Then("Verify the relevance of the features to the warranty product field")
+    public void verifyFeatureRelevance() {
+        // Implement code to verify relevance of features to warranty product field
+    }
+}
+```
+
+3. Implement the automation scripts using Java Selenium to interact with the system UI or API based on the test steps defined in the step definitions.
+
+4. Run the automation scripts using a test runner class that integrates Cucumber with JUnit or TestNG.
+
+By following the above steps, you can create automation scripts for the provided regression test cases using a BDD framework with Java Selenium.

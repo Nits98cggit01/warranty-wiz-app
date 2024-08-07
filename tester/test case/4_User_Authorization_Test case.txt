@@ -1,0 +1,75 @@
+Epic name: User Authentication and Authorization
+Feature name: User Authorization
+Feature id: 1.3
+
+Test Case 1
+Test Description: Verify that all the required fields are present in the UI for inputting warranty product details.
+Precondition: User is on the warranty product details input screen.
+Test Steps:
+- Check for the presence of fields for Policyholder's Name, Address Line 1, Address Line 2, City, State, Country, Postal Code, Mobile Number, Email, VIN, License Plate, Make, Model, Mileage, First Registration Date, and Maker Warranty End Date.
+- Expected result: All the required fields are displayed.
+
+Test Case 2
+Test Description: Verify the validation rules for each field in the UI.
+Precondition: User is on the warranty product details input screen.
+Test Steps:
+- Enter invalid data in each field and try to submit the form.
+- Expected result: Validation error messages should be displayed for each field with invalid data.
+
+Test Case 3
+Test Description: Verify that the system accurately saves warranty product details in the database.
+Precondition: User has entered valid warranty product details in the UI.
+Test Steps:
+- Submit the form with valid data.
+- Check the database for the saved warranty product details.
+- Expected result: Warranty product details are accurately saved in the database.
+
+Test Case 4
+Test Description: Verify feedback on successful submission of warranty product details.
+Precondition: User has successfully submitted warranty product details.
+Test Steps:
+- Submit the form with valid data.
+- Check for the success message or confirmation screen.
+- Expected result: User receives feedback on successful submission of warranty product details.
+
+Test Case 5
+Test Description: Verify the maximum character limit for each field in the UI.
+Precondition: User is on the warranty product details input screen.
+Test Steps:
+- Enter data exceeding the maximum character limit for each field.
+- Expected result: Data entry is restricted to the maximum character limit for each field.
+
+Test Case 6
+Test Description: Verify the format validation for email and mobile number fields.
+Precondition: User is on the warranty product details input screen.
+Test Steps:
+- Enter invalid email and mobile number formats.
+- Expected result: Validation error messages should be displayed for email and mobile number fields.
+
+Test Case 7
+Test Description: Verify the validation for VIN and License Plate fields.
+Precondition: User is on the warranty product details input screen.
+Test Steps:
+- Enter invalid VIN and License Plate formats.
+- Expected result: Validation error messages should be displayed for VIN and License Plate fields.
+
+Test Case 8
+Test Description: Verify the validation for numeric fields like Mileage.
+Precondition: User is on the warranty product details input screen.
+Test Steps:
+- Enter non-numeric data in the Mileage field.
+- Expected result: Validation error message should be displayed for the Mileage field.
+
+Test Case 9
+Test Description: Verify the validation for date fields like First Registration Date and Maker Warranty End Date.
+Precondition: User is on the warranty product details input screen.
+Test Steps:
+- Enter invalid date formats in the date fields.
+- Expected result: Validation error message should be displayed for date fields.
+
+Test Case 10
+Test Description: Verify the validation for State and Country fields.
+Precondition: User is on the warranty product details input screen.
+Test Steps:
+- Enter invalid State and Country values.
+- Expected result: Validation error message should be displayed for State and Country fields.

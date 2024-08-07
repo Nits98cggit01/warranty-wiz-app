@@ -1,0 +1,4 @@
+Epic 8:
+- Feature 8.1: Gen AI enabled features
+- Feature 8.2: AI-driven recommendations
+- Feature 8.3: AI-powered decision support

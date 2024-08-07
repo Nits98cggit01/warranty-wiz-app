@@ -1,0 +1,20 @@
+Based on the provided test cases focusing on positive scenarios, the regression test cases can be identified as follows:
+
+Regression Test Case 1:
+Test Case Name: Verify all fields are present for Policyholder's personal information
+Test Description: Ensure that all required fields for Policyholder's personal information are available in the system.
+Precondition: User is on the personal information input screen.
+Test Steps:
+- Verify the presence of fields for Policyholder's Name, Address Line 1, Address Line 2, City, State, Country, Postal Code, Mobile Number, Email.
+- Expected result: All fields are displayed on the screen.
+
+Regression Test Case 2:
+Test Case Name: Verify successful submission of valid information
+Test Description: Ensure that valid and accurate information can be successfully submitted.
+Precondition: User is on the personal information input screen with all fields filled correctly.
+Test Steps:
+- Enter valid data in all fields.
+- Submit the form.
+- Expected result: Form should be successfully submitted without any errors.
+
+These two regression test cases cover the key positive scenarios related to verifying the presence of all required fields and ensuring successful submission of valid information. They represent 20% of the total test cases provided.

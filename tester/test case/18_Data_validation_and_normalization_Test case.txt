@@ -1,0 +1,91 @@
+Epic name: Vehicle Data Management
+Feature name: Data validation and normalization
+Feature id: 5.3
+
+Test Case 1
+Test Case Name: Validate Policyholder's Name field
+Test Description: Verify that the Policyholder's Name field is validated for required input and length restrictions.
+Precondition: Warranty product form is open
+Test Steps:
+- Enter a valid Policyholder's Name
+- Enter an empty Policyholder's Name
+Expected result: Error message should be displayed for empty input.
+
+Test Case 2
+Test Case Name: Validate Address field
+Test Description: Ensure that the Address field is validated for required input and length restrictions.
+Precondition: Warranty product form is open
+Test Steps:
+- Enter a valid Address
+- Enter an Address exceeding the length limit
+Expected result: Error message should be displayed for exceeding length limit.
+
+Test Case 3
+Test Case Name: Normalize City field
+Test Description: Verify that the City field is normalized to uppercase.
+Precondition: Warranty product form is open
+Test Steps:
+- Enter a city name in lowercase
+Expected result: City name should be converted to uppercase.
+
+Test Case 4
+Test Case Name: Validate Email field
+Test Description: Validate the Email field for correct email format.
+Precondition: Warranty product form is open
+Test Steps:
+- Enter a valid email address
+- Enter an invalid email address
+Expected result: Error message should be displayed for invalid email format.
+
+Test Case 5
+Test Case Name: Normalize Mobile Number field
+Test Description: Ensure that the Mobile Number field is standardized.
+Precondition: Warranty product form is open
+Test Steps:
+- Enter a mobile number in different formats
+Expected result: Mobile number should be standardized to a consistent format.
+
+Test Case 6
+Test Case Name: Validate VIN field
+Test Description: Verify that the VIN field is validated for required input.
+Precondition: Warranty product form is open
+Test Steps:
+- Enter a valid VIN
+- Leave the VIN field empty
+Expected result: Error message should be displayed for empty VIN.
+
+Test Case 7
+Test Case Name: Normalize License Plate field
+Test Description: Ensure that the License Plate field is normalized to uppercase.
+Precondition: Warranty product form is open
+Test Steps:
+- Enter a license plate in lowercase
+Expected result: License plate should be converted to uppercase.
+
+Test Case 8
+Test Case Name: Validate Mileage field
+Test Description: Validate the Mileage field for numeric input.
+Precondition: Warranty product form is open
+Test Steps:
+- Enter a valid numeric value for Mileage
+- Enter a non-numeric value for Mileage
+Expected result: Error message should be displayed for non-numeric input.
+
+Test Case 9
+Test Case Name: Normalize First Registration Date field
+Test Description: Ensure that the First Registration Date field is formatted consistently.
+Precondition: Warranty product form is open
+Test Steps:
+- Enter a date in different formats
+Expected result: Date should be formatted consistently.
+
+Test Case 10
+Test Case Name: Validate Maker Warranty End Date field
+Test Description: Verify that the Maker Warranty End Date field is validated for correct date format.
+Precondition: Warranty product form is open
+Test Steps:
+- Enter a valid date
+- Enter an invalid date format
+Expected result: Error message should be displayed for invalid date format.
+
+These test cases cover the acceptance criteria for data validation and normalization in the warranty product information form.

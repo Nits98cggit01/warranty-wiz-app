@@ -1,0 +1,61 @@
+To automate the regression test cases using a BDD framework with Java and Selenium, we can use Cucumber for writing feature files and step definitions. Below is an example implementation for the provided regression test cases:
+
+1. Create a feature file for Regression Test Case 1:
+
+```gherkin
+Feature: Verify the list of available vehicle models
+
+Scenario: Verify the system provides a list of available vehicle models with their corresponding factors
+  Given the system is up and running with vehicle model data available
+  When I access the system to fetch the list of available vehicle models
+  Then the list should include make, model, year, and price for each vehicle model
+```
+
+2. Create a feature file for Regression Test Case 2:
+
+```gherkin
+Feature: Verify the user can filter and search for specific vehicle models
+
+Scenario: Verify the user can filter and search for specific vehicle models based on different criteria
+  Given the system is up and running with vehicle model data available
+  When I filter vehicle models based on "<criteria>"
+  Then the search results should match the specified criteria
+```
+
+3. Create step definitions for the feature files:
+
+```java
+public class VehicleModelSteps {
+
+    @Given("the system is up and running with vehicle model data available")
+    public void systemIsUpAndRunning() {
+        // Implementation to set up the system
+    }
+
+    @When("I access the system to fetch the list of available vehicle models")
+    public void fetchListOfVehicleModels() {
+        // Implementation to fetch the list of vehicle models
+    }
+
+    @Then("the list should include make, model, year, and price for each vehicle model")
+    public void verifyVehicleModelFactors() {
+        // Implementation to verify the factors of each vehicle model
+    }
+
+    @When("I filter vehicle models based on {string}")
+    public void filterVehicleModels(String criteria) {
+        // Implementation to filter vehicle models based on the specified criteria
+    }
+
+    @Then("the search results should match the specified criteria")
+    public void verifySearchResults() {
+        // Implementation to verify the search results
+    }
+}
+```
+
+4. Implement the automation scripts using Java and Selenium WebDriver to interact with the system and perform the test steps defined in the step definitions.
+
+5. Run the Cucumber tests to execute the regression test cases and verify the expected results.
+
+By following this approach, you can automate the regression test cases using a BDD framework with Java and Selenium, ensuring that the key functionalities related to fetching and filtering vehicle model factors are thoroughly tested.

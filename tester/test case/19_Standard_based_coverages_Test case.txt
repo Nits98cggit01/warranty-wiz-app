@@ -1,0 +1,93 @@
+Epic name: Warranty Coverage Management
+Feature name: Standard based coverages
+Feature id: 6.1
+
+Test Case 1
+Test Case Name: Display Standard Warranty Coverages
+Test Description: Verify that the system displays a list of standard warranty coverages available.
+Precondition: User is logged in as a policyholder.
+Test Steps:
+- Navigate to the warranty coverages section.
+- Check if the list of standard warranty coverages is displayed.
+Expected result: The system should display a list of standard warranty coverages available.
+
+Test Case 2
+Test Case Name: View Details of Standard Coverage
+Test Description: Verify that each standard coverage includes details such as coverage type, duration, and exclusions.
+Precondition: Standard warranty coverage list is displayed.
+Test Steps:
+- Select a standard coverage option.
+- Check for coverage type, duration, and exclusions details.
+Expected result: Each standard coverage should include details such as coverage type, duration, and exclusions.
+
+Test Case 3
+Test Case Name: Select Standard Coverage Option
+Test Description: Verify that the policyholder can select a standard coverage option.
+Precondition: Standard warranty coverage list is displayed.
+Test Steps:
+- Click on a standard coverage option.
+- Verify that the option is selected.
+Expected result: Policyholder should be able to select a standard coverage option.
+
+Test Case 4
+Test Case Name: Calculate Premium for Selected Coverage
+Test Description: Verify that the system calculates the premium based on the selected standard coverage.
+Precondition: Standard coverage option is selected.
+Test Steps:
+- Proceed to the premium calculation section.
+- Check if the premium is calculated correctly based on the selected coverage.
+Expected result: The system should calculate the premium accurately based on the selected standard coverage.
+
+Test Case 5
+Test Case Name: Edge Case - No Standard Coverages Available
+Test Description: Verify the behavior when there are no standard coverages available.
+Precondition: No standard coverages are available.
+Test Steps:
+- Navigate to the warranty coverages section.
+- Check how the system handles the scenario.
+Expected result: The system should display a message indicating no standard coverages are available.
+
+Test Case 6
+Test Case Name: Edge Case - Invalid Coverage Selection
+Test Description: Verify the behavior when an invalid standard coverage option is selected.
+Precondition: Standard warranty coverage list is displayed.
+Test Steps:
+- Select an invalid standard coverage option.
+- Check for error messages or warnings.
+Expected result: The system should provide appropriate feedback for selecting an invalid coverage option.
+
+Test Case 7
+Test Case Name: Edge Case - Maximum Coverage Duration
+Test Description: Verify the behavior when the maximum coverage duration is selected.
+Precondition: Standard warranty coverage list is displayed.
+Test Steps:
+- Select a standard coverage with the maximum duration.
+- Check if the system handles the maximum duration correctly.
+Expected result: The system should allow selection of the maximum coverage duration without errors.
+
+Test Case 8
+Test Case Name: Edge Case - Premium Calculation with Exclusions
+Test Description: Verify the premium calculation when selected coverage has exclusions.
+Precondition: Standard coverage option with exclusions is selected.
+Test Steps:
+- Verify the exclusions for the selected coverage.
+- Check if the premium calculation accounts for the exclusions.
+Expected result: The system should calculate the premium correctly considering the exclusions of the selected coverage.
+
+Test Case 9
+Test Case Name: Edge Case - Multiple Coverage Selection
+Test Description: Verify the behavior when multiple standard coverages are selected.
+Precondition: Standard warranty coverage list is displayed.
+Test Steps:
+- Select multiple standard coverage options.
+- Check how the system handles multiple selections.
+Expected result: The system should allow the policyholder to select multiple standard coverages and calculate the total premium accordingly.
+
+Test Case 10
+Test Case Name: Edge Case - Coverage Type Validation
+Test Description: Verify the system behavior when an invalid coverage type is encountered.
+Precondition: Standard warranty coverage list is displayed.
+Test Steps:
+- Select a standard coverage with an invalid coverage type.
+- Check for error messages or warnings.
+Expected result: The system should validate the coverage type and provide appropriate feedback for invalid selections.

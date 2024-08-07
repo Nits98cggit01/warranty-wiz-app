@@ -1,0 +1,31 @@
+Epic 6: Warranty Coverage Management
+
+Feature 6.1: Standard based coverages
+
+User story 6.1.1: As a policyholder, I want to view the standard warranty coverages available for my product so that I can understand the protection provided.
+
+Acceptance criteria:
+1. The system should display a list of standard warranty coverages available.
+2. Each standard coverage should include details such as coverage type, duration, and exclusions.
+3. Policyholder should be able to select a standard coverage option.
+4. The system should calculate the premium based on the selected standard coverage.
+
+Feature 6.2: Coverage customization options
+
+User story 6.2.1: As a policyholder, I want to customize my warranty coverage options to suit my specific needs.
+
+Acceptance criteria:
+1. The system should allow policyholders to add additional coverage options beyond the standard ones.
+2. Policyholder should be able to adjust coverage duration and coverage limits.
+3. The system should provide a summary of the customized coverage options before finalizing the selection.
+4. Policyholder should be able to save and edit customized coverage options for future reference.
+
+Feature 6.3: Compliance with industry standards
+
+User story 6.3.1: As a compliance officer, I want to ensure that the warranty coverages offered meet industry standards and regulations.
+
+Acceptance criteria:
+1. The system should validate that all warranty coverages adhere to industry regulations and standards.
+2. Compliance officer should be able to review and approve new warranty coverage options before they are made available to policyholders.
+3. The system should generate compliance reports showing the adherence to industry standards.
+4. Any changes to industry standards should trigger a review of existing warranty coverages for compliance updates.

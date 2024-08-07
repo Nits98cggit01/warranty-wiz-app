@@ -1,0 +1,82 @@
+To automate the provided regression test cases using BDD framework with Java and Selenium, we can use Cucumber for writing the feature files and Gherkin syntax to define the scenarios. Below is an example implementation of the automation scripts for the given test cases:
+
+1. Create a Maven project and add the necessary dependencies for Selenium, Cucumber, and WebDriverManager in the `pom.xml` file.
+
+2. Create a feature file `VehicleWarrantyManagement.feature` with the following content:
+
+```gherkin
+Feature: Vehicle Warranty Management
+
+  Scenario: Verify that user can input VIN information
+    Given User is on the vehicle information capture page
+    When User enters a valid VIN number
+    And User clicks on submit button
+    Then User should receive confirmation message for successful input of VIN
+
+  Scenario: Verify confirmation message for successful input of all information
+    Given User is on the vehicle information capture page
+    When User enters valid information for all fields
+    And User clicks on submit button
+    Then User should receive a confirmation message for successful input of all information
+```
+
+3. Create a step definition file `VehicleWarrantyManagementSteps.java` to map the steps defined in the feature file to Java methods for execution.
+
+```java
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
+public class VehicleWarrantyManagementSteps {
+
+    @Given("User is on the vehicle information capture page")
+    public void userIsOnVehicleInfoPage() {
+        // Code to navigate to the vehicle information capture page
+    }
+
+    @When("User enters a valid VIN number")
+    public void userEntersValidVIN() {
+        // Code to enter a valid VIN number
+    }
+
+    @When("User enters valid information for all fields")
+    public void userEntersValidInfoForAllFields() {
+        // Code to enter valid information for all fields
+    }
+
+    @When("User clicks on submit button")
+    public void userClicksSubmitButton() {
+        // Code to click on the submit button
+    }
+
+    @Then("User should receive confirmation message for successful input of VIN")
+    public void userReceivesConfirmationForVIN() {
+        // Code to verify confirmation message for VIN input
+    }
+
+    @Then("User should receive a confirmation message for successful input of all information")
+    public void userReceivesConfirmationForAllInfo() {
+        // Code to verify confirmation message for all information input
+    }
+}
+```
+
+4. Create a TestRunner class `TestRunner.java` to run the Cucumber feature file.
+
+```java
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = "src/test/resources/VehicleWarrantyManagement.feature",
+                 glue = "stepDefinitions")
+public class TestRunner {
+}
+```
+
+5. Implement the necessary Selenium WebDriver code in the step definition methods to interact with the web elements on the vehicle information capture page.
+
+6. Run the TestRunner class to execute the automation scripts for the regression test cases.
+
+This setup will allow you to automate the provided regression test cases using the BDD framework with Java and Selenium.

@@ -1,0 +1,25 @@
+Based on the provided test cases focusing on positive flow scenarios, the regression test cases can be identified as follows:
+
+Regression Test Case 1
+Test Case Name: Add additional coverage options - Multiple options
+Test Description: Verify that the system allows policyholders to add multiple additional coverage options beyond the standard ones.
+Precondition: Policyholder is logged into the system.
+Test Steps:
+- Navigate to the coverage customization section.
+- Add multiple additional coverage options.
+- Verify that all new coverage options are successfully added.
+Expected result: All additional coverage options are successfully added.
+
+Regression Test Case 2
+Test Case Name: Adjust coverage duration - Minimum and Maximum values
+Test Description: Verify that policyholders can adjust the coverage duration to the minimum and maximum values.
+Precondition: Policyholder is logged into the system.
+Test Steps:
+- Select a coverage option.
+- Adjust the coverage duration to the minimum value.
+- Verify that the coverage duration is updated.
+- Adjust the coverage duration to the maximum value.
+- Verify that the coverage duration is updated.
+Expected result: The coverage duration is successfully adjusted to both minimum and maximum values.
+
+These two regression test cases cover key scenarios such as adding multiple additional coverage options and adjusting coverage duration to minimum and maximum values. They also cover edge cases as requested. These regression test cases focus on critical functionalities and ensure that the core features of the Coverage customization options are working as expected.

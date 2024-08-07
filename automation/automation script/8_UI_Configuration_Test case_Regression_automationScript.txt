@@ -1,0 +1,83 @@
+To automate the regression test cases using BDD framework with Java Selenium, we can use Cucumber for writing feature files and Gherkin syntax to define the scenarios. Below is an example implementation of the automation scripts for the provided regression test cases:
+
+1. Create a feature file for the regression test cases:
+
+```gherkin
+Feature: UI Configuration Regression Tests
+
+  Scenario: Rearrange Fields Order - Revert Changes
+    Given System administrator is logged in
+    And Fields order has been rearranged in the UI
+    When System administrator clicks on the 'Undo' button
+    Then The field order should be reverted to the original state before rearrangement
+
+  Scenario: Immediate Reflection of Changes - Page Refresh Check
+    Given System administrator is logged in
+    And Changes have been made to the UI configuration
+    When System administrator verifies the UI updates instantly
+    Then The UI should update instantly without the need for a page refresh
+```
+
+2. Create step definitions for the feature file:
+
+```java
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
+public class UIConfigurationSteps {
+
+    @Given("System administrator is logged in")
+    public void systemAdministratorIsLoggedIn() {
+        // Code to log in as system administrator
+    }
+
+    @Given("Fields order has been rearranged in the UI")
+    public void fieldsOrderHasBeenRearranged() {
+        // Code to rearrange fields in the UI
+    }
+
+    @When("System administrator clicks on the 'Undo' button")
+    public void systemAdministratorClicksUndoButton() {
+        // Code to click on the 'Undo' button
+    }
+
+    @Then("The field order should be reverted to the original state before rearrangement")
+    public void fieldOrderShouldBeReverted() {
+        // Code to verify the field order is reverted
+    }
+
+    @Given("Changes have been made to the UI configuration")
+    public void changesMadeToUIConfiguration() {
+        // Code to make changes to UI configuration
+    }
+
+    @When("System administrator verifies the UI updates instantly")
+    public void systemAdministratorVerifiesUIUpdatesInstantly() {
+        // Code to verify UI updates instantly
+    }
+
+    @Then("The UI should update instantly without the need for a page refresh")
+    public void uiShouldUpdateInstantly() {
+        // Code to verify UI updates without page refresh
+    }
+}
+```
+
+3. Create a test runner class to execute the feature file:
+
+```java
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = "src/test/resources/features/UIConfiguration.feature",
+                 glue = "stepDefinitions")
+public class TestRunner {
+}
+```
+
+4. Implement the Selenium code within the step definitions to interact with the UI elements and perform the necessary actions.
+
+By following the above steps, you can automate the regression test cases using BDD framework with Java Selenium for the provided scenarios.

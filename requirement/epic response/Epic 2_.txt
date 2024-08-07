@@ -1,0 +1,29 @@
+Epic 2: Vehicle Warranty Management
+
+Feature 2.1: Coverage selection for vehicle
+
+User story 2.1.1: As a user, I want to be able to select the coverage plan for my vehicle so that I can choose the appropriate warranty option.
+
+Acceptance criteria:
+1. User should be able to see a list of available coverage plans for their vehicle.
+2. User should be able to select one coverage plan from the list.
+3. User should receive confirmation of the selected coverage plan.
+
+Feature 2.2: Vehicle information capture
+
+User story 2.2.1: As a user, I want to input my vehicle information so that the warranty plan can be tailored to my specific vehicle.
+
+Acceptance criteria:
+1. User should be able to input the following vehicle information: VIN, License Plate, Make, Model, Mileage, First Registration Date.
+2. All fields should be validated for correct format and data type.
+3. User should receive confirmation once all information is successfully input.
+
+Feature 2.3: Coverage plan options
+
+User story 2.3.1: As a user, I want to view and select from different coverage plan options for my vehicle warranty.
+
+Acceptance criteria:
+1. User should be able to see a list of coverage plan options.
+2. Each coverage plan option should display details such as coverage period, cost, and included services.
+3. User should be able to select one coverage plan option.
+4. User should receive confirmation of the selected coverage plan option.

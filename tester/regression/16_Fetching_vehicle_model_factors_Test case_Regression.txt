@@ -1,0 +1,19 @@
+Based on the provided test cases focusing on positive scenarios, the regression test cases can be identified as follows:
+
+Regression Test Case 1:
+Test Description: Verify that the system provides a list of available vehicle models with their corresponding factors.
+Precondition: System is up and running with vehicle model data available.
+Test Steps:
+- Access the system to fetch the list of available vehicle models.
+- Check if the list includes make, model, year, and price for each vehicle model.
+Expected result: The system displays a comprehensive list of vehicle models with all required factors.
+
+Regression Test Case 2:
+Test Description: Verify that the user can filter and search for specific vehicle models based on different criteria.
+Precondition: System is up and running with vehicle model data available.
+Test Steps:
+- Use the search functionality to filter vehicle models based on make, model, year, or price.
+- Verify that the search results match the specified criteria.
+Expected result: The system allows the user to accurately filter and search for specific vehicle models.
+
+These two regression test cases cover key functionalities related to fetching and filtering vehicle model factors, which are crucial for the overall functionality of the feature.

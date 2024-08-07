@@ -1,0 +1,64 @@
+To automate the regression test cases using BDD framework with Java Selenium, we can use Cucumber for writing feature files and step definitions. Below is an example implementation of the automation scripts for the provided regression test cases:
+
+1. Create a feature file for the regression test cases:
+
+```gherkin
+Feature: API Regression Tests
+
+  Scenario: Retrieve vehicle data successfully
+    Given API is up and running
+    When a GET request is sent to fetch vehicle data
+    Then verify the response contains make, model, year, and price information
+
+  Scenario: API documentation verification
+    Given API documentation is available
+    When reviewing the API documentation
+    Then check if it includes sample requests and responses
+```
+
+2. Create step definitions for the feature file:
+
+```java
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
+public class APITestSteps {
+
+    @Given("API is up and running")
+    public void apiIsUpAndRunning() {
+        // Add code to check if API is up and running
+    }
+
+    @When("a GET request is sent to fetch vehicle data")
+    public void sendGETRequestForVehicleData() {
+        // Add code to send a GET request to fetch vehicle data
+    }
+
+    @Then("verify the response contains make, model, year, and price information")
+    public void verifyResponseContainsVehicleData() {
+        // Add code to verify the response contains required vehicle data fields
+    }
+
+    @Given("API documentation is available")
+    public void apiDocumentationIsAvailable() {
+        // Add code to check if API documentation is available
+    }
+
+    @When("reviewing the API documentation")
+    public void reviewAPIDocumentation() {
+        // Add code to review the API documentation
+    }
+
+    @Then("check if it includes sample requests and responses")
+    public void checkAPIDocumentationContent() {
+        // Add code to check if API documentation includes sample requests and responses
+    }
+}
+```
+
+3. Implement the automation scripts using Java Selenium to interact with the API and verify the responses.
+
+4. Run the Cucumber tests to execute the regression test cases.
+
+This is a basic example to get you started with automating the provided regression test cases using BDD framework with Java Selenium. You can further enhance the scripts by adding more validations, error handling, and reporting as needed.

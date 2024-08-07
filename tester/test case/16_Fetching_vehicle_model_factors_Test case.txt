@@ -1,0 +1,76 @@
+Epic name : Vehicle Data Management
+Feature name : Fetching vehicle model factors
+Feature id : 5.1
+
+Test Case 1
+Test Description: Verify that the system provides a list of available vehicle models with their corresponding factors.
+Precondition: System is up and running with vehicle model data available.
+Test Steps:
+- Access the system to fetch the list of available vehicle models.
+- Check if the list includes make, model, year, and price for each vehicle model.
+Expected result: The system displays a comprehensive list of vehicle models with all required factors.
+
+Test Case 2
+Test Description: Verify that the user can filter and search for specific vehicle models based on different criteria.
+Precondition: System is up and running with vehicle model data available.
+Test Steps:
+- Use the search functionality to filter vehicle models based on make, model, year, or price.
+- Verify that the search results match the specified criteria.
+Expected result: The system allows the user to accurately filter and search for specific vehicle models.
+
+Test Case 3
+Test Description: Verify that the system displays accurate and up-to-date information for each vehicle model factor.
+Precondition: System is up and running with accurate vehicle model data.
+Test Steps:
+- Access the system to view the information for a specific vehicle model.
+- Verify that the displayed information is up-to-date and accurate.
+Expected result: The system shows the correct and current information for each vehicle model factor.
+
+Test Case 4
+Test Description: Verify edge case - Empty list of vehicle models.
+Precondition: System is up and running with no vehicle model data available.
+Test Steps:
+- Attempt to fetch the list of available vehicle models.
+Expected result: The system displays a message indicating that there are no vehicle models available.
+
+Test Case 5
+Test Description: Verify edge case - Search with non-existent criteria.
+Precondition: System is up and running with vehicle model data available.
+Test Steps:
+- Search for a vehicle model using criteria that do not exist in the database.
+Expected result: The system returns a message indicating that no matching vehicle models were found.
+
+Test Case 6
+Test Description: Verify edge case - Display of outdated information.
+Precondition: System is up and running with outdated vehicle model data.
+Test Steps:
+- Access the system to view the information for a specific vehicle model.
+Expected result: The system displays a message indicating that the information may be outdated and prompts the user to refresh.
+
+Test Case 7
+Test Description: Verify edge case - Filtering with invalid criteria.
+Precondition: System is up and running with vehicle model data available.
+Test Steps:
+- Attempt to filter vehicle models using invalid criteria.
+Expected result: The system displays an error message indicating that the filtering criteria are invalid.
+
+Test Case 8
+Test Description: Verify edge case - Display of incomplete information for a vehicle model.
+Precondition: System is up and running with vehicle model data available.
+Test Steps:
+- Access the system to view the information for a specific vehicle model.
+Expected result: The system displays a message indicating that some factors for the vehicle model are missing.
+
+Test Case 9
+Test Description: Verify edge case - Search with special characters.
+Precondition: System is up and running with vehicle model data available.
+Test Steps:
+- Search for a vehicle model using special characters in the search criteria.
+Expected result: The system handles the special characters appropriately and returns relevant search results.
+
+Test Case 10
+Test Description: Verify edge case - Display of duplicate vehicle models.
+Precondition: System is up and running with vehicle model data available.
+Test Steps:
+- Access the system to view the list of available vehicle models.
+Expected result: The system does not display duplicate entries for the same vehicle model.

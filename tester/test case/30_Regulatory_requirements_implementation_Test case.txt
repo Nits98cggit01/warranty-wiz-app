@@ -1,0 +1,83 @@
+Epic name: Industry Compliance and Regulatory Requirements
+Feature name: Regulatory requirements implementation
+Feature id: 9.2
+
+Test Case 1
+Test Case Name: Verify all required fields are present
+Test Description: Ensure that all the necessary fields for vehicle information are available on the system.
+Precondition: User is on the vehicle information input screen.
+Test Steps:
+- Verify the presence of VIN, License Plate, Make, Model, Mileage, First Registration Date, Maker Warranty End Date fields.
+- Expected result: All required fields are displayed.
+
+Test Case 2
+Test Case Name: Validate VIN field format
+Test Description: Ensure that the VIN field has proper validation to accept the correct format.
+Precondition: User is on the vehicle information input screen.
+Test Steps:
+- Enter an invalid VIN format.
+- Expected result: System displays an error message for invalid VIN format.
+
+Test Case 3
+Test Case Name: Validate License Plate field format
+Test Description: Ensure that the License Plate field has proper validation to accept the correct format.
+Precondition: User is on the vehicle information input screen.
+Test Steps:
+- Enter an invalid License Plate format.
+- Expected result: System displays an error message for invalid License Plate format.
+
+Test Case 4
+Test Case Name: Validate Maker Warranty End Date against First Registration Date
+Test Description: Ensure that the Maker Warranty End Date is validated against the First Registration Date.
+Precondition: User is on the vehicle information input screen.
+Test Steps:
+- Enter a Maker Warranty End Date that is before the First Registration Date.
+- Expected result: System displays an error message for invalid Maker Warranty End Date.
+
+Test Case 5
+Test Case Name: Display warnings for non-compliant vehicle information
+Test Description: Ensure that relevant warnings are displayed if the vehicle information does not meet regulatory standards.
+Precondition: User has entered vehicle information on the system.
+Test Steps:
+- Enter incomplete or incorrect vehicle information.
+- Expected result: System displays warnings for non-compliant information.
+
+Test Case 6
+Test Case Name: Edge case - Maximum input length for fields
+Test Description: Test the system's behavior when maximum input length is provided for each field.
+Precondition: User is on the vehicle information input screen.
+Test Steps:
+- Enter maximum length values for each field.
+- Expected result: System accepts the input without any errors.
+
+Test Case 7
+Test Case Name: Edge case - Minimum input length for fields
+Test Description: Test the system's behavior when minimum input length is provided for each field.
+Precondition: User is on the vehicle information input screen.
+Test Steps:
+- Enter minimum length values for each field.
+- Expected result: System accepts the input without any errors.
+
+Test Case 8
+Test Case Name: Edge case - Boundary validation for dates
+Test Description: Test the system's behavior when boundary dates are provided for Maker Warranty End Date and First Registration Date.
+Precondition: User is on the vehicle information input screen.
+Test Steps:
+- Enter boundary dates for Maker Warranty End Date and First Registration Date.
+- Expected result: System validates the dates correctly.
+
+Test Case 9
+Test Case Name: Edge case - Special characters in fields
+Test Description: Test the system's behavior when special characters are entered in the fields.
+Precondition: User is on the vehicle information input screen.
+Test Steps:
+- Enter special characters in each field.
+- Expected result: System rejects special characters and displays an error message.
+
+Test Case 10
+Test Case Name: Edge case - Null values for fields
+Test Description: Test the system's behavior when null values are provided for each field.
+Precondition: User is on the vehicle information input screen.
+Test Steps:
+- Leave each field empty.
+- Expected result: System displays error messages for each empty field.

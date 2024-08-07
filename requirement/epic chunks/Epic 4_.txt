@@ -1,0 +1,6 @@
+Epic 4:
+- Feature 4.1: Reporting services integration
+- Feature 4.2: CLUE Report generation
+- Feature 4.3: Record Report generation
+- Feature 4.4: Reliability Report generation
+- Feature 4.5: Sentiment Analysis integration

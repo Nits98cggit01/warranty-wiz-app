@@ -1,0 +1,83 @@
+Epic name: User Authentication and Authorization
+Feature name: User Authentication
+Feature id: 1.2
+
+Test Case 1
+Test Description: Verify successful authentication with valid credentials
+Precondition: User is on the login page
+Test Steps:
+- Enter valid username and password
+- Click on the "Login" button
+Expected result: User should be authenticated successfully
+
+Test Case 2
+Test Description: Verify authentication failure with invalid credentials
+Precondition: User is on the login page
+Test Steps:
+- Enter invalid username and password
+- Click on the "Login" button
+Expected result: User should not be authenticated and should see an error message
+
+Test Case 3
+Test Description: Verify password complexity rules enforcement
+Precondition: User is on the login page
+Test Steps:
+- Enter a password that does not meet complexity rules (e.g., less than 8 characters, no special characters)
+- Click on the "Login" button
+Expected result: User should not be authenticated and should see an error message regarding password complexity rules
+
+Test Case 4
+Test Description: Verify authentication with maximum length credentials
+Precondition: User is on the login page
+Test Steps:
+- Enter a username and password with maximum allowed length
+- Click on the "Login" button
+Expected result: User should be authenticated successfully
+
+Test Case 5
+Test Description: Verify authentication with empty username
+Precondition: User is on the login page
+Test Steps:
+- Leave the username field empty and enter a valid password
+- Click on the "Login" button
+Expected result: User should not be authenticated and should see an error message
+
+Test Case 6
+Test Description: Verify authentication with empty password
+Precondition: User is on the login page
+Test Steps:
+- Enter a valid username and leave the password field empty
+- Click on the "Login" button
+Expected result: User should not be authenticated and should see an error message
+
+Test Case 7
+Test Description: Verify authentication with special characters in credentials
+Precondition: User is on the login page
+Test Steps:
+- Enter a username and password containing special characters
+- Click on the "Login" button
+Expected result: User should be authenticated successfully
+
+Test Case 8
+Test Description: Verify authentication with all uppercase username
+Precondition: User is on the login page
+Test Steps:
+- Enter an all uppercase username and a valid password
+- Click on the "Login" button
+Expected result: User should be authenticated successfully
+
+Test Case 9
+Test Description: Verify authentication with all lowercase password
+Precondition: User is on the login page
+Test Steps:
+- Enter a valid username and an all lowercase password
+- Click on the "Login" button
+Expected result: User should be authenticated successfully
+
+Test Case 10
+Test Description: Verify authentication with leading/trailing spaces in credentials
+Precondition: User is on the login page
+Test Steps:
+- Enter a username and password with leading/trailing spaces
+- Click on the "Login" button
+Expected result: User should be authenticated successfully

@@ -1,0 +1,75 @@
+Epic name: Vehicle Warranty Management
+Feature name: Coverage selection for vehicle
+Feature id: 2.1
+
+Test Case 1
+Test Description: User can see a list of available coverage plans for their vehicle
+Precondition: User is logged into the system
+Test Steps:
+- User navigates to the coverage selection page
+- User views the list of available coverage plans
+Expected result: User sees a comprehensive list of coverage plans for their vehicle
+
+Test Case 2
+Test Description: User can select one coverage plan from the list
+Precondition: User is on the coverage selection page
+Test Steps:
+- User clicks on a specific coverage plan from the list
+Expected result: The selected coverage plan is highlighted or marked as chosen
+
+Test Case 3
+Test Description: User receives confirmation of the selected coverage plan
+Precondition: User has selected a coverage plan
+Test Steps:
+- User confirms the selection
+- System displays a confirmation message
+Expected result: User receives a confirmation message indicating the selected coverage plan
+
+Test Case 4
+Test Description: Edge case - User selects the first coverage plan from the list
+Precondition: User is on the coverage selection page
+Test Steps:
+- User selects the first coverage plan from the list
+Expected result: The first coverage plan is successfully selected
+
+Test Case 5
+Test Description: Edge case - User selects the last coverage plan from the list
+Precondition: User is on the coverage selection page
+Test Steps:
+- User scrolls to the end of the list and selects the last coverage plan
+Expected result: The last coverage plan is successfully selected
+
+Test Case 6
+Test Description: Edge case - User selects multiple coverage plans from the list
+Precondition: User is on the coverage selection page
+Test Steps:
+- User selects more than one coverage plan from the list
+Expected result: System should allow selection of only one coverage plan at a time
+
+Test Case 7
+Test Description: Edge case - User tries to select a non-existent coverage plan
+Precondition: User is on the coverage selection page
+Test Steps:
+- User attempts to select a coverage plan that is not in the list
+Expected result: System should display an error message indicating the plan is not available
+
+Test Case 8
+Test Description: Edge case - User cancels the selection of a coverage plan
+Precondition: User has selected a coverage plan
+Test Steps:
+- User clicks on the cancel button
+Expected result: The selection is reverted and no coverage plan is chosen
+
+Test Case 9
+Test Description: Edge case - User navigates away from the coverage selection page without selecting a plan
+Precondition: User is on the coverage selection page
+Test Steps:
+- User closes the browser tab or navigates to a different page without selecting a plan
+Expected result: No coverage plan is selected and the user can return to select a plan later
+
+Test Case 10
+Test Description: Edge case - User selects a coverage plan and then changes their selection
+Precondition: User has already selected a coverage plan
+Test Steps:
+- User selects a different coverage plan
+Expected result: The new coverage plan is selected and the previous selection is overridden

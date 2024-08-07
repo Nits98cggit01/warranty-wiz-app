@@ -1,0 +1,85 @@
+Epic name : Vehicle Warranty Management
+Feature name : Vehicle information capture
+Feature id : 2.2
+
+Test Case 1
+Test Description: Verify that user can input VIN information
+Precondition: User is on the vehicle information capture page
+Test Steps:
+- Enter a valid VIN number
+- Click on submit button
+Expected result: User should receive confirmation message for successful input of VIN
+
+Test Case 2
+Test Description: Verify that user can input License Plate information
+Precondition: User is on the vehicle information capture page
+Test Steps:
+- Enter a valid License Plate number
+- Click on submit button
+Expected result: User should receive confirmation message for successful input of License Plate
+
+Test Case 3
+Test Description: Verify that user can input Make information
+Precondition: User is on the vehicle information capture page
+Test Steps:
+- Enter a valid Make value
+- Click on submit button
+Expected result: User should receive confirmation message for successful input of Make
+
+Test Case 4
+Test Description: Verify that user can input Model information
+Precondition: User is on the vehicle information capture page
+Test Steps:
+- Enter a valid Model value
+- Click on submit button
+Expected result: User should receive confirmation message for successful input of Model
+
+Test Case 5
+Test Description: Verify that user can input Mileage information
+Precondition: User is on the vehicle information capture page
+Test Steps:
+- Enter a valid Mileage value
+- Click on submit button
+Expected result: User should receive confirmation message for successful input of Mileage
+
+Test Case 6
+Test Description: Verify that user can input First Registration Date information
+Precondition: User is on the vehicle information capture page
+Test Steps:
+- Enter a valid First Registration Date
+- Click on submit button
+Expected result: User should receive confirmation message for successful input of First Registration Date
+
+Test Case 7
+Test Description: Verify validation for incorrect format of VIN
+Precondition: User is on the vehicle information capture page
+Test Steps:
+- Enter an invalid format for VIN
+- Click on submit button
+Expected result: User should receive an error message for incorrect format of VIN
+
+Test Case 8
+Test Description: Verify validation for incorrect data type of License Plate
+Precondition: User is on the vehicle information capture page
+Test Steps:
+- Enter an invalid data type for License Plate
+- Click on submit button
+Expected result: User should receive an error message for incorrect data type of License Plate
+
+Test Case 9
+Test Description: Verify validation for missing Make information
+Precondition: User is on the vehicle information capture page
+Test Steps:
+- Leave Make field empty
+- Click on submit button
+Expected result: User should receive an error message for missing Make information
+
+Test Case 10
+Test Description: Verify confirmation message for successful input of all information
+Precondition: User is on the vehicle information capture page
+Test Steps:
+- Enter valid information for all fields
+- Click on submit button
+Expected result: User should receive a confirmation message for successful input of all information
+
+These test cases cover the acceptance criteria and ensure that all edge cases are considered for the feature of Vehicle information capture.

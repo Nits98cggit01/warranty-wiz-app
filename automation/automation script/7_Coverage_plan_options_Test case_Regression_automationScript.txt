@@ -1,0 +1,84 @@
+To automate the provided regression test cases using a BDD framework with Java and Selenium, we can use Cucumber for writing feature files and Gherkin syntax for defining the test scenarios. Below is an example implementation of the automation scripts for the given regression test cases:
+
+1. Create a feature file (coveragePlanOptions.feature) with the following scenarios:
+
+```gherkin
+Feature: Coverage Plan Options
+
+  Scenario: User should be able to see a list of coverage plan options
+    Given User is logged into the system
+    When User navigates to the coverage plan options page
+    Then User should see a list of coverage plan options
+
+  Scenario: Each coverage plan option should display details
+    Given User is on the coverage plan options page
+    When User selects a coverage plan option
+    Then Coverage period, cost, and included services should be displayed
+```
+
+2. Create step definitions for the feature file:
+
+```java
+package stepDefinitions;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class CoveragePlanOptionsSteps {
+
+    @Given("User is logged into the system")
+    public void userIsLoggedIn() {
+        // Implementation to log in
+    }
+
+    @When("User navigates to the coverage plan options page")
+    public void navigateToCoveragePlanOptionsPage() {
+        // Implementation to navigate to the coverage plan options page
+    }
+
+    @Then("User should see a list of coverage plan options")
+    public void verifyCoveragePlanOptionsList() {
+        // Implementation to verify the list of coverage plan options
+    }
+
+    @Given("User is on the coverage plan options page")
+    public void userIsOnCoveragePlanOptionsPage() {
+        // Implementation to verify user is on the coverage plan options page
+    }
+
+    @When("User selects a coverage plan option")
+    public void selectCoveragePlanOption() {
+        // Implementation to select a coverage plan option
+    }
+
+    @Then("Coverage period, cost, and included services should be displayed")
+    public void verifyCoveragePlanOptionDetails() {
+        // Implementation to verify the details of the selected coverage plan option
+    }
+}
+```
+
+3. Create a TestRunner class to run the feature file:
+
+```java
+package runners;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features = "src/test/resources/features",
+        glue = "stepDefinitions"
+)
+public class TestRunner {
+}
+```
+
+4. Implement the Selenium WebDriver code within the step definitions to interact with the web elements on the coverage plan options page.
+
+5. Run the TestRunner class to execute the automation scripts for the regression test cases.
+
+This setup allows you to automate the provided regression test cases using a BDD framework with Java and Selenium, ensuring that the core functionality of viewing and selecting coverage plan options is tested automatically.

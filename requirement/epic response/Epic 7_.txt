@@ -1,0 +1,35 @@
+Epic 7: Rating System Enhancement
+
+Feature 7.1: High level requirement of the Rating on the Factors
+User story 7.1.1: As a system user, I want to understand the factors that contribute to the overall rating of a product.
+
+Acceptance criteria:
+1. The system should provide a clear list of factors that are considered in the rating calculations.
+2. Each factor should have a description explaining its importance in the rating process.
+3. The factors should be easily accessible to the user through the system interface.
+
+Feature 7.2: Rating calculation logic
+User story 7.2.1: As a system user, I want the rating calculation to be accurate and consistent based on the defined factors.
+
+Acceptance criteria:
+1. The system should accurately calculate the rating based on the input values for each factor.
+2. The rating calculation should be consistent across different product entries.
+3. The system should handle edge cases such as missing or invalid input values gracefully.
+
+Feature 7.3: Factor weightage configuration
+User story 7.3.1: As a system administrator, I want to be able to configure the weightage of each factor in the rating calculation.
+
+Acceptance criteria:
+1. The system should allow the administrator to set the weightage for each factor through a user-friendly interface.
+2. The weightage configuration should be saved and applied to the rating calculation process.
+3. The system should validate the total weightage to ensure it sums up to 100%.
+4. Changes in factor weightage should reflect in real-time on the rating calculation results.
+
+UI for Warranty Product Field:
+User story 7.3.2: As a system user, I want to input and view detailed information about a warranty product.
+
+Acceptance criteria:
+1. The UI should include fields for Policyholder's Name, Address Line 1, Address Line 2, City, State, Country, Postal Code, Mobile Number, Email, VIN, License Plate, Make, Model, Mileage, First Registration Date, and Maker Warranty End Date.
+2. The UI should provide validation for mandatory fields and format checks for fields like Mobile Number, Email, VIN, and First Registration Date.
+3. The system should store the entered warranty product information accurately and securely.
+4. The UI should display the entered information for reference and editing purposes.

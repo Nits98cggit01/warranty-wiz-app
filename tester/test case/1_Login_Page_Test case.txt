@@ -1,0 +1,90 @@
+Epic name: User Authentication and Authorization
+Feature name: Login Page
+Feature id: 1.1
+
+Test Case 1
+Test Case Name: Verify presence of input fields for username and password
+Test Description: Verify that the login page contains input fields for username and password.
+Precondition: User is on the login page.
+Test Steps:
+- Check for the presence of username input field.
+- Check for the presence of password input field.
+Expected result: Both username and password input fields are displayed on the login page.
+
+Test Case 2
+Test Case Name: Verify presence of Login button
+Test Description: Verify that the login page contains a "Login" button to submit the credentials.
+Precondition: User is on the login page.
+Test Steps:
+- Check for the presence of the "Login" button.
+Expected result: The "Login" button is displayed on the login page.
+
+Test Case 3
+Test Case Name: Verify presence of Forgot Password link
+Test Description: Verify that the login page contains a "Forgot Password" link for password recovery.
+Precondition: User is on the login page.
+Test Steps:
+- Check for the presence of the "Forgot Password" link.
+Expected result: The "Forgot Password" link is displayed on the login page.
+
+Test Case 4
+Test Case Name: Verify error message for invalid credentials
+Test Description: Verify that appropriate error messages are displayed for invalid credentials.
+Precondition: User is on the login page.
+Test Steps:
+- Enter invalid username and password.
+- Click on the "Login" button.
+Expected result: An appropriate error message is displayed for invalid credentials.
+
+Test Case 5
+Test Case Name: Verify successful login
+Test Description: Verify that the user can successfully login with valid credentials.
+Precondition: User is on the login page.
+Test Steps:
+- Enter valid username and password.
+- Click on the "Login" button.
+Expected result: User is successfully logged in and directed to the home page.
+
+Test Case 6
+Test Case Name: Verify edge case - Empty username and password
+Test Description: Verify the behavior when both username and password fields are empty.
+Precondition: User is on the login page.
+Test Steps:
+- Leave both username and password fields empty.
+- Click on the "Login" button.
+Expected result: An appropriate error message is displayed for empty fields.
+
+Test Case 7
+Test Case Name: Verify edge case - Long username and password
+Test Description: Verify the behavior when very long usernames and passwords are entered.
+Precondition: User is on the login page.
+Test Steps:
+- Enter a very long username and password.
+- Click on the "Login" button.
+Expected result: System should handle long inputs gracefully without crashing.
+
+Test Case 8
+Test Case Name: Verify edge case - Special characters in username and password
+Test Description: Verify the behavior when special characters are entered in the username and password fields.
+Precondition: User is on the login page.
+Test Steps:
+- Enter special characters in username and password fields.
+- Click on the "Login" button.
+Expected result: System should accept and validate special characters correctly.
+
+Test Case 9
+Test Case Name: Verify edge case - Case sensitivity in username
+Test Description: Verify the behavior when the username is case sensitive.
+Precondition: User is on the login page.
+Test Steps:
+- Enter username with different cases (e.g., "User1" and "user1").
+- Click on the "Login" button.
+Expected result: System should treat usernames as case sensitive.
+
+Test Case 10
+Test Case Name: Verify edge case - Password recovery link functionality
+Test Description: Verify that clicking on the "Forgot Password" link redirects the user to the password recovery page.
+Precondition: User is on the login page.
+Test Steps:
+- Click on the "Forgot Password" link.
+Expected result: User is redirected to the password recovery page successfully.

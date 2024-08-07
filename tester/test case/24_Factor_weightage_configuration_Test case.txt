@@ -1,0 +1,83 @@
+Epic name: Rating System Enhancement
+Feature name: Factor weightage configuration
+Feature id: 7.3
+
+Test Case 1
+Test Description: Verify that the system allows the administrator to set weightage for each factor through the user-friendly interface.
+Precondition: User is logged in as a system administrator.
+Test Steps:
+- Navigate to the factor weightage configuration section.
+- Set weightage values for each factor.
+- Save the configuration.
+Expected result: Weightage for each factor is successfully set and saved.
+
+Test Case 2
+Test Description: Verify that the weightage configuration is saved and applied to the rating calculation process.
+Precondition: Weightage for each factor is configured.
+Test Steps:
+- Trigger a rating calculation process.
+Expected result: The configured weightage is applied to the calculation process.
+
+Test Case 3
+Test Description: Verify that the system validates the total weightage to ensure it sums up to 100%.
+Precondition: Weightage for each factor is configured.
+Test Steps:
+- Set weightage values such that the total does not sum up to 100%.
+- Save the configuration.
+Expected result: System displays an error message indicating that the total weightage should sum up to 100%.
+
+Test Case 4
+Test Description: Verify that changes in factor weightage reflect in real-time on the rating calculation results.
+Precondition: Weightage for each factor is configured.
+Test Steps:
+- Modify the weightage of a factor.
+- Trigger a rating calculation process.
+Expected result: The rating calculation reflects the updated weightage for the modified factor.
+
+Test Case 5
+Test Description: Verify that the system prevents non-numeric values for weightage input.
+Precondition: User is on the weightage configuration page.
+Test Steps:
+- Enter a non-numeric value for weightage.
+- Save the configuration.
+Expected result: System displays an error message indicating that only numeric values are allowed for weightage.
+
+Test Case 6
+Test Description: Verify that the system allows decimals for weightage input.
+Precondition: User is on the weightage configuration page.
+Test Steps:
+- Enter decimal values for weightage.
+- Save the configuration.
+Expected result: System accepts decimal values for weightage input.
+
+Test Case 7
+Test Description: Verify that the system handles concurrent weightage configuration changes by multiple administrators.
+Precondition: Multiple administrators are logged in and accessing the weightage configuration.
+Test Steps:
+- Simultaneously modify weightage values for the same factor.
+- Save the configuration.
+Expected result: System handles the concurrent changes gracefully without data loss or conflicts.
+
+Test Case 8
+Test Description: Verify that the system retains the weightage configuration after system restart.
+Precondition: Weightage for each factor is configured and saved.
+Test Steps:
+- Restart the system.
+- Verify the weightage configuration.
+Expected result: The weightage configuration remains intact after system restart.
+
+Test Case 9
+Test Description: Verify that the system provides an option to reset weightage to default values.
+Precondition: Weightage for each factor is configured.
+Test Steps:
+- Navigate to the weightage configuration page.
+- Click on the reset to default button.
+Expected result: Weightage values are reset to default values.
+
+Test Case 10
+Test Description: Verify that the system logs all weightage configuration changes for audit purposes.
+Precondition: Weightage for each factor is configured.
+Test Steps:
+- Modify weightage values for one or more factors.
+- Save the configuration.
+Expected result: System logs the changes with timestamps and user details for audit trail.

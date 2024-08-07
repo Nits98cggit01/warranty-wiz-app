@@ -1,0 +1,19 @@
+Based on the provided test cases, the regression test cases focusing on key scenarios that cover positive flow only can be identified as follows:
+
+Regression Test Case 1
+Test Case Name: Verify all required fields are present
+Test Description: Ensure that all the necessary fields for vehicle information are available on the system.
+Precondition: User is on the vehicle information input screen.
+Test Steps:
+- Verify the presence of VIN, License Plate, Make, Model, Mileage, First Registration Date, Maker Warranty End Date fields.
+- Expected result: All required fields are displayed.
+
+Regression Test Case 2
+Test Case Name: Display warnings for non-compliant vehicle information
+Test Description: Ensure that relevant warnings are displayed if the vehicle information does not meet regulatory standards.
+Precondition: User has entered vehicle information on the system.
+Test Steps:
+- Enter incomplete or incorrect vehicle information.
+- Expected result: System displays warnings for non-compliant information.
+
+These two regression test cases cover essential scenarios related to field presence and compliance warnings, which are critical for ensuring the system's functionality and regulatory adherence.

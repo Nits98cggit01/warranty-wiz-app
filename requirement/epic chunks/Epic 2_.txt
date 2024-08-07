@@ -1,0 +1,4 @@
+Epic 2:
+- Feature 2.1: Coverage selection for vehicle
+- Feature 2.2: Vehicle information capture
+- Feature 2.3: Coverage plan options

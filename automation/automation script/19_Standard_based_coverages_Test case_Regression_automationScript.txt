@@ -1,0 +1,78 @@
+To automate the regression test cases using BDD framework with Java Selenium, we can use Cucumber for writing feature files and step definitions. Below is an example implementation for the provided regression test cases:
+
+1. Create a feature file for the regression test cases:
+
+```gherkin
+Feature: Warranty Coverage Management
+
+  Scenario: Display Standard Warranty Coverages
+    Given User is logged in as a policyholder
+    When User navigates to the warranty coverages section
+    Then System should display a list of standard warranty coverages available
+
+  Scenario: View Details of Standard Coverage
+    Given Standard warranty coverage list is displayed
+    When User selects a standard coverage option
+    Then Each standard coverage should include details such as coverage type, duration, and exclusions
+```
+
+2. Create step definitions for the feature file:
+
+```java
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
+public class WarrantyCoverageSteps {
+
+    @Given("User is logged in as a policyholder")
+    public void userIsLoggedInAsPolicyholder() {
+        // Implement login functionality
+    }
+
+    @When("User navigates to the warranty coverages section")
+    public void userNavigatesToWarrantyCoveragesSection() {
+        // Implement navigation to warranty coverages section
+    }
+
+    @Then("System should display a list of standard warranty coverages available")
+    public void systemShouldDisplayStandardWarrantyCoverages() {
+        // Implement verification of standard warranty coverages list
+    }
+
+    @Given("Standard warranty coverage list is displayed")
+    public void standardWarrantyCoverageListIsDisplayed() {
+        // Implement verification of displayed standard warranty coverage list
+    }
+
+    @When("User selects a standard coverage option")
+    public void userSelectsStandardCoverageOption() {
+        // Implement selection of a standard coverage option
+    }
+
+    @Then("Each standard coverage should include details such as coverage type, duration, and exclusions")
+    public void eachStandardCoverageShouldIncludeDetails() {
+        // Implement verification of coverage type, duration, and exclusions details
+    }
+}
+```
+
+3. Create a test runner class to execute the feature file:
+
+```java
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = "src/test/resources/features",
+                 glue = "com.example.steps")
+public class TestRunner {
+}
+```
+
+4. Implement the necessary Selenium WebDriver code within the step definitions to interact with the web application and verify the expected results.
+
+5. Execute the test cases using the TestRunner class to run the BDD scenarios and validate the functionality.
+
+This setup allows for the automation of the regression test cases using a BDD framework with Java Selenium, ensuring that the core functionalities related to warranty coverages are tested efficiently.

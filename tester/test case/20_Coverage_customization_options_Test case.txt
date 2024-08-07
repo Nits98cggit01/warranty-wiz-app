@@ -1,0 +1,62 @@
+Epic name : Warranty Coverage Management
+Feature name : Coverage customization options
+Feature id : 6.2
+
+Test Case 1
+Test Case Name: Add additional coverage options
+Test Description: Verify that the system allows policyholders to add additional coverage options beyond the standard ones.
+Precondition: Policyholder is logged into the system.
+Test Steps:
+- Navigate to the coverage customization section.
+- Add an additional coverage option.
+- Verify that the new coverage option is successfully added.
+Expected result: The additional coverage option is successfully added.
+
+Test Case 2
+Test Case Name: Adjust coverage duration
+Test Description: Verify that policyholders can adjust the coverage duration.
+Precondition: Policyholder is logged into the system.
+Test Steps:
+- Select a coverage option.
+- Adjust the coverage duration.
+- Verify that the coverage duration is updated.
+Expected result: The coverage duration is successfully adjusted.
+
+Test Case 3
+Test Case Name: Adjust coverage limits
+Test Description: Verify that policyholders can adjust the coverage limits.
+Precondition: Policyholder is logged into the system.
+Test Steps:
+- Select a coverage option.
+- Adjust the coverage limits.
+- Verify that the coverage limits are updated.
+Expected result: The coverage limits are successfully adjusted.
+
+Test Case 4
+Test Case Name: Summary of customized coverage options
+Test Description: Verify that the system provides a summary of the customized coverage options before finalizing the selection.
+Precondition: Policyholder has customized coverage options.
+Test Steps:
+- Review the summary of customized coverage options.
+Expected result: The system displays a summary of the customized coverage options.
+
+Test Case 5
+Test Case Name: Save customized coverage options
+Test Description: Verify that policyholders can save customized coverage options for future reference.
+Precondition: Policyholder has customized coverage options.
+Test Steps:
+- Save the customized coverage options.
+- Verify that the options are saved successfully.
+Expected result: The customized coverage options are saved for future reference.
+
+Test Case 6
+Test Case Name: Edit customized coverage options
+Test Description: Verify that policyholders can edit saved customized coverage options.
+Precondition: Policyholder has saved customized coverage options.
+Test Steps:
+- Access the saved customized coverage options.
+- Edit the options.
+- Verify that the changes are saved successfully.
+Expected result: The customized coverage options are successfully edited and saved.
+
+Ensure to cover edge cases such as adding multiple additional coverage options, adjusting coverage duration to minimum and maximum values, setting coverage limits to the minimum and maximum values, reviewing the summary with multiple customized options, saving and editing multiple sets of customized coverage options.

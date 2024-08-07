@@ -1,0 +1,84 @@
+Epic name: UI Customization and Theme Selection
+Feature name: Customizable User Interface
+Feature id: 3.2
+
+Test Case 1
+Test Description: Verify that the policyholder can choose a color scheme for the UI.
+Precondition: User is logged in and on the UI customization page.
+Test Steps:
+- Select a color scheme from the available options.
+- Save the changes.
+Expected result: The UI should update to reflect the selected color scheme.
+
+Test Case 2
+Test Description: Verify that the policyholder can select a font style and size for the UI.
+Precondition: User is logged in and on the UI customization page.
+Test Steps:
+- Choose a font style and size from the dropdown menus.
+- Save the changes.
+Expected result: The UI text should update to reflect the selected font style and size.
+
+Test Case 3
+Test Description: Verify that the policyholder can set a background image for the UI.
+Precondition: User is logged in and on the UI customization page.
+Test Steps:
+- Upload a custom background image.
+- Save the changes.
+Expected result: The UI background should update to display the uploaded image.
+
+Test Case 4
+Test Description: Verify that the customized UI settings are saved for future visits.
+Precondition: User is logged in and has previously customized the UI.
+Test Steps:
+- Log out and log back in.
+Expected result: The UI should retain the previously selected color scheme, font style, size, and background image.
+
+Test Case 5
+Test Description: Verify that the policyholder cannot select an invalid color scheme.
+Precondition: User is logged in and on the UI customization page.
+Test Steps:
+- Attempt to select an invalid color scheme.
+- Save the changes.
+Expected result: An error message should be displayed, and the UI should not update.
+
+Test Case 6
+Test Description: Verify that the policyholder cannot select an invalid font style or size.
+Precondition: User is logged in and on the UI customization page.
+Test Steps:
+- Choose an invalid font style or size from the dropdown menus.
+- Save the changes.
+Expected result: An error message should be displayed, and the UI text should not update.
+
+Test Case 7
+Test Description: Verify that the policyholder cannot upload an unsupported background image format.
+Precondition: User is logged in and on the UI customization page.
+Test Steps:
+- Upload an image in an unsupported format (e.g., .pdf).
+- Save the changes.
+Expected result: An error message should be displayed, and the UI background should not update.
+
+Test Case 8
+Test Description: Verify that the policyholder can reset the UI customization settings to default.
+Precondition: User is logged in and has customized the UI.
+Test Steps:
+- Click on the reset button.
+Expected result: The UI should revert to the default color scheme, font style, size, and background image.
+
+Test Case 9
+Test Description: Verify that the policyholder can customize the UI settings multiple times.
+Precondition: User is logged in and on the UI customization page.
+Test Steps:
+- Make changes to the color scheme, font style, size, and background image.
+- Save the changes.
+- Repeat the customization process with different settings.
+Expected result: The UI should update each time with the newly selected settings.
+
+Test Case 10
+Test Description: Verify that the UI customization settings are specific to each policyholder.
+Precondition: Multiple policyholders have customized their UI settings.
+Test Steps:
+- Each policyholder customizes their UI.
+- Log in with different policyholder accounts.
+Expected result: The UI should display the customized settings specific to each policyholder.
+
+Ensure that all the edge cases are covered for the task with the acceptance criteria.

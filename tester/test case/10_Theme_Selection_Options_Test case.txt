@@ -1,0 +1,81 @@
+Epic name : UI Customization and Theme Selection
+Feature name : Theme Selection Options
+Feature id : 3.3
+
+Test Case 1
+Test Description: Verify that the user is presented with at least three different theme options.
+Precondition: User is on the Theme Selection Options screen.
+Test Steps:
+- User navigates to the Theme Selection Options screen.
+- Check if there are at least three theme options displayed.
+Expected result: User should see a minimum of three different theme options.
+
+Test Case 2
+Test Description: Verify that each theme has a distinct color scheme and layout.
+Precondition: User is on the Theme Selection Options screen.
+Test Steps:
+- User previews each theme option.
+- Check the color scheme and layout of each theme.
+Expected result: Each theme should have a unique color scheme and layout.
+
+Test Case 3
+Test Description: Verify that the user can preview each theme before selecting one.
+Precondition: User is on the Theme Selection Options screen.
+Test Steps:
+- User clicks on each theme option to preview.
+- Check if the preview is displayed correctly.
+Expected result: User should be able to preview each theme before selecting one.
+
+Test Case 4
+Test Description: Verify that the selected theme is applied to the entire UI consistently.
+Precondition: User has selected a theme.
+Test Steps:
+- User selects a theme.
+- Navigate to different UI screens.
+Expected result: The selected theme should be applied consistently across all UI screens.
+
+Test Case 5
+Test Description: Verify that the selected theme persists across sessions for the user.
+Precondition: User has selected a theme.
+Test Steps:
+- User selects a theme and logs out.
+- User logs back in.
+Expected result: The selected theme should persist for the user across sessions.
+
+Test Case 6
+Test Description: Verify the behavior when user selects the same theme multiple times.
+Precondition: User is on the Theme Selection Options screen.
+Test Steps:
+- User selects a theme.
+- User selects the same theme again.
+Expected result: The UI should remain consistent without any changes.
+
+Test Case 7
+Test Description: Verify the behavior when user switches between different themes.
+Precondition: User is on the Theme Selection Options screen.
+Test Steps:
+- User selects one theme.
+- User selects a different theme.
+Expected result: The UI should update to reflect the newly selected theme.
+
+Test Case 8
+Test Description: Verify the performance impact of applying different themes.
+Precondition: User is on the Theme Selection Options screen.
+Test Steps:
+- Apply each theme option multiple times.
+- Measure the time taken to apply the theme.
+Expected result: Applying themes should not significantly impact the performance.
+
+Test Case 9
+Test Description: Verify the accessibility of theme selection options.
+Precondition: User is on the Theme Selection Options screen.
+Test Steps:
+- Use screen reader tools to navigate and select themes.
+Expected result: Theme selection options should be accessible to users with disabilities.
+
+Test Case 10
+Test Description: Verify the error handling when selecting an invalid theme.
+Precondition: User is on the Theme Selection Options screen.
+Test Steps:
+- User tries to select a theme that is not available.
+Expected result: An appropriate error message should be displayed to the user.

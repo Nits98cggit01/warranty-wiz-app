@@ -1,0 +1,78 @@
+To automate the provided regression test cases using a BDD framework with Java and Selenium, we can use Cucumber for writing feature files and Gherkin syntax to define the scenarios. Below is an example implementation of the automation scripts for the given regression test cases:
+
+1. Create a feature file (rating_calculation.feature) with the following scenarios:
+
+```gherkin
+Feature: Rating Calculation Feature
+
+  Scenario: Verify weightage configuration is saved and applied to rating calculation
+    Given Weightage for each factor is configured
+    When Trigger a rating calculation process
+    Then Configured weightage is applied to the calculation process
+
+  Scenario: Verify changes in factor weightage reflect in real-time on rating calculation results
+    Given Weightage for each factor is configured
+    When Modify the weightage of a factor
+    And Trigger a rating calculation process
+    Then Rating calculation reflects the updated weightage for the modified factor
+```
+
+2. Create step definitions for the feature file:
+
+```java
+package stepDefinitions;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
+public class RatingCalculationSteps {
+
+    @Given("Weightage for each factor is configured")
+    public void weightageConfigured() {
+        // Implement logic to configure weightage
+    }
+
+    @When("Trigger a rating calculation process")
+    public void triggerRatingCalculation() {
+        // Implement logic to trigger rating calculation
+    }
+
+    @When("Modify the weightage of a factor")
+    public void modifyWeightage() {
+        // Implement logic to modify weightage of a factor
+    }
+
+    @Then("Configured weightage is applied to the calculation process")
+    public void verifyWeightageApplied() {
+        // Implement verification logic for weightage application
+    }
+
+    @Then("Rating calculation reflects the updated weightage for the modified factor")
+    public void verifyRatingCalculationReflectsUpdatedWeightage() {
+        // Implement verification logic for updated weightage reflection
+    }
+}
+```
+
+3. Create a TestRunner class to execute the feature file:
+
+```java
+package runners;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features = "src/test/resources/features",
+        glue = "stepDefinitions"
+)
+public class TestRunner {
+}
+```
+
+4. Implement the automation logic using Selenium WebDriver in the step definitions as per the test steps mentioned in the scenarios.
+
+This setup will allow you to run the regression test cases using Cucumber with Java and Selenium WebDriver, ensuring that the weightage configuration and its impact on the rating calculation process are validated automatically.

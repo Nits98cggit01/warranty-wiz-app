@@ -1,0 +1,68 @@
+To automate the provided regression test cases using a BDD framework with Java and Selenium, we can use Cucumber for writing feature files and Gherkin syntax to define the scenarios. Below are the steps to create automation scripts for the regression test cases:
+
+1. Create a new Maven project in your preferred IDE (Eclipse, IntelliJ, etc.).
+2. Add the necessary dependencies for Cucumber, Selenium, and WebDriverManager in the pom.xml file.
+3. Create a new package for step definitions and feature files.
+4. Create a feature file for each regression test case with the following scenarios:
+
+RegressionTestCase1.feature:
+```gherkin
+Feature: Validate Policyholder's Name field
+
+Scenario: Verify validation of Policyholder's Name field for required input
+Given Warranty product form is open
+When user enters a valid Policyholder's Name
+Then no error message should be displayed
+
+Scenario: Verify validation of Policyholder's Name field for empty input
+Given Warranty product form is open
+When user enters an empty Policyholder's Name
+Then error message should be displayed
+```
+
+RegressionTestCase2.feature:
+```gherkin
+Feature: Normalize City field
+
+Scenario: Verify normalization of City field to uppercase
+Given Warranty product form is open
+When user enters a city name in lowercase
+Then city name should be converted to uppercase
+```
+
+5. Create step definition classes corresponding to the steps in the feature files. Below is an example for the first regression test case:
+
+```java
+public class PolicyholderNameValidationSteps {
+
+    @Given("Warranty product form is open")
+    public void openWarrantyProductForm() {
+        // Code to open the warranty product form
+    }
+
+    @When("user enters a valid Policyholder's Name")
+    public void enterValidPolicyholderName() {
+        // Code to enter a valid Policyholder's Name
+    }
+
+    @When("user enters an empty Policyholder's Name")
+    public void enterEmptyPolicyholderName() {
+        // Code to enter an empty Policyholder's Name
+    }
+
+    @Then("no error message should be displayed")
+    public void verifyNoErrorMessage() {
+        // Code to verify no error message is displayed
+    }
+
+    @Then("error message should be displayed")
+    public void verifyErrorMessage() {
+        // Code to verify error message is displayed
+    }
+}
+```
+
+6. Implement the step definitions with Selenium WebDriver commands to interact with the web elements on the warranty product form.
+7. Run the Cucumber feature files using JUnit to execute the automation scripts for the regression test cases.
+
+By following these steps, you can create automation scripts for the provided regression test cases using a BDD framework with Java and Selenium.

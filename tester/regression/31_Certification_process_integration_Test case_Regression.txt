@@ -1,0 +1,19 @@
+Based on the provided test cases focusing on key scenarios that cover positive flow only, the regression test cases can be identified as follows:
+
+Regression Test Case 1
+Test Case Name: Logging Certification Activities
+Test Description: Verify that the system maintains a log of certification activities for auditing purposes.
+Precondition: Certification activities are performed.
+Test Steps:
+- System logs all certification activities.
+- Expected result: Certification activities are logged for auditing purposes.
+
+Regression Test Case 2
+Test Case Name: Edge Case - Audit Log Verification
+Test Description: Verify that the audit log accurately records all certification activities.
+Precondition: Certification activities have been performed.
+Test Steps:
+- Verify the audit log for accuracy and completeness.
+- Expected result: All certification activities are correctly logged in the audit log.
+
+These two regression test cases cover critical functionalities related to logging certification activities and verifying the accuracy of the audit log, which are essential for ensuring the system's compliance and regulatory requirements.

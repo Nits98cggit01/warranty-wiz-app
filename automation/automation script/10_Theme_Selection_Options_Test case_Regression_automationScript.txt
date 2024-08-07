@@ -1,0 +1,93 @@
+To automate the regression test cases using BDD framework with Java Selenium, we can use Cucumber for writing feature files and Gherkin syntax to define the scenarios. Below is an example of how the automation scripts can be implemented:
+
+1. Create a feature file for Regression Test Case 1:
+
+```gherkin
+Feature: Theme Selection and Consistency
+
+Scenario: Verify selected theme is applied consistently across all UI screens
+  Given User has selected a theme
+  When User navigates to different UI screens
+  Then The selected theme should be applied consistently across all UI screens
+```
+
+2. Create a step definition class for the above feature file:
+
+```java
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
+public class ThemeSelectionSteps {
+
+    @Given("User has selected a theme")
+    public void user_has_selected_a_theme() {
+        // Code to select a theme
+    }
+
+    @When("User navigates to different UI screens")
+    public void user_navigates_to_different_UI_screens() {
+        // Code to navigate to different UI screens
+    }
+
+    @Then("The selected theme should be applied consistently across all UI screens")
+    public void the_selected_theme_should_be_applied_consistently_across_all_UI_screens() {
+        // Code to verify the selected theme is applied consistently
+    }
+}
+```
+
+3. Create a feature file for Regression Test Case 2:
+
+```gherkin
+Feature: Theme Persistence
+
+Scenario: Verify selected theme persists across sessions for the user
+  Given User has selected a theme
+  When User logs out and logs back in
+  Then The selected theme should persist for the user across sessions
+```
+
+4. Create a step definition class for the above feature file:
+
+```java
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
+public class ThemePersistenceSteps {
+
+    @Given("User has selected a theme")
+    public void user_has_selected_a_theme() {
+        // Code to select a theme
+    }
+
+    @When("User logs out and logs back in")
+    public void user_logs_out_and_logs_back_in() {
+        // Code to log out and log back in
+    }
+
+    @Then("The selected theme should persist for the user across sessions")
+    public void the_selected_theme_should_persist_for_the_user_across_sessions() {
+        // Code to verify the selected theme persists across sessions
+    }
+}
+```
+
+5. Create a TestRunner class to run the feature files:
+
+```java
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = {"src/test/resources/features"},
+        glue = {"stepdefinitions"})
+public class TestRunner {
+}
+```
+
+6. Implement the Selenium WebDriver code within the step definition classes to interact with the UI elements and perform the necessary actions.
+
+By following the above steps, you can automate the regression test cases using BDD framework with Java Selenium for the provided scenarios.

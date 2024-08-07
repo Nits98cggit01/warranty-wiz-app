@@ -1,0 +1,20 @@
+Based on the provided test cases focusing on positive flow scenarios, the regression test cases can be identified as follows:
+
+Regression Test Case 1:
+Test Case Name: Validate Policyholder's Name field
+Test Description: Verify that the Policyholder's Name field is validated for required input and length restrictions.
+Precondition: Warranty product form is open
+Test Steps:
+- Enter a valid Policyholder's Name
+- Enter an empty Policyholder's Name
+Expected result: Error message should be displayed for empty input.
+
+Regression Test Case 2:
+Test Case Name: Normalize City field
+Test Description: Verify that the City field is normalized to uppercase.
+Precondition: Warranty product form is open
+Test Steps:
+- Enter a city name in lowercase
+Expected result: City name should be converted to uppercase.
+
+These two regression test cases cover key scenarios related to data validation and normalization in the warranty product information form. They represent critical functionalities that need to be tested during regression testing to ensure the stability of the application.

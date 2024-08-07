@@ -1,0 +1,92 @@
+Epic name: Rating System Enhancement
+Feature name: Rating calculation logic
+Feature id: 7.2
+
+Test Case 1
+Test Case Name: CalculateRatingWithValidInputValues
+Test Description: Verify that the system accurately calculates the rating based on valid input values.
+Precondition: Valid input values are provided for all factors.
+Test Steps:
+- Provide valid input values for all factors.
+- Calculate the rating.
+Expected result: The system should accurately calculate the rating based on the input values.
+
+Test Case 2
+Test Case Name: CalculateRatingConsistency
+Test Description: Verify that the rating calculation is consistent across different product entries.
+Precondition: Multiple product entries with the same input values for factors.
+Test Steps:
+- Calculate the rating for each product entry.
+Expected result: The rating calculation should be consistent for all product entries with the same input values.
+
+Test Case 3
+Test Case Name: HandleMissingInputValues
+Test Description: Verify that the system handles missing input values gracefully.
+Precondition: One or more input values are missing.
+Test Steps:
+- Provide missing input values.
+- Calculate the rating.
+Expected result: The system should handle missing input values and provide an appropriate error message.
+
+Test Case 4
+Test Case Name: HandleInvalidInputValues
+Test Description: Verify that the system handles invalid input values gracefully.
+Precondition: One or more input values are invalid.
+Test Steps:
+- Provide invalid input values.
+- Calculate the rating.
+Expected result: The system should handle invalid input values and provide an appropriate error message.
+
+Test Case 5
+Test Case Name: CalculateRatingWithZeroValues
+Test Description: Verify that the system accurately calculates the rating when input values are zero.
+Precondition: All input values are set to zero.
+Test Steps:
+- Set all input values to zero.
+- Calculate the rating.
+Expected result: The system should accurately calculate the rating when input values are zero.
+
+Test Case 6
+Test Case Name: CalculateRatingWithMaximumValues
+Test Description: Verify that the system accurately calculates the rating with maximum input values.
+Precondition: All input values are set to their maximum allowed values.
+Test Steps:
+- Set all input values to their maximum allowed values.
+- Calculate the rating.
+Expected result: The system should accurately calculate the rating with maximum input values.
+
+Test Case 7
+Test Case Name: CalculateRatingWithMinimumValues
+Test Description: Verify that the system accurately calculates the rating with minimum input values.
+Precondition: All input values are set to their minimum allowed values.
+Test Steps:
+- Set all input values to their minimum allowed values.
+- Calculate the rating.
+Expected result: The system should accurately calculate the rating with minimum input values.
+
+Test Case 8
+Test Case Name: CalculateRatingWithNegativeValues
+Test Description: Verify that the system handles negative input values gracefully.
+Precondition: One or more input values are negative.
+Test Steps:
+- Provide negative input values.
+- Calculate the rating.
+Expected result: The system should handle negative input values and provide an appropriate error message.
+
+Test Case 9
+Test Case Name: CalculateRatingWithLargeValues
+Test Description: Verify that the system accurately calculates the rating with large input values.
+Precondition: Input values are set to large numbers.
+Test Steps:
+- Set input values to large numbers.
+- Calculate the rating.
+Expected result: The system should accurately calculate the rating with large input values.
+
+Test Case 10
+Test Case Name: CalculateRatingWithDecimalValues
+Test Description: Verify that the system accurately calculates the rating with decimal input values.
+Precondition: Input values contain decimal numbers.
+Test Steps:
+- Set input values to decimal numbers.
+- Calculate the rating.
+Expected result: The system should accurately calculate the rating with decimal input values.

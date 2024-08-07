@@ -1,0 +1,88 @@
+To automate the provided regression test cases using BDD framework with Java and Selenium, we can use Cucumber for writing feature files and Gherkin syntax for defining the test scenarios. Below are the steps to create automation scripts for the given regression test cases:
+
+1. Create a new Maven project in your preferred IDE (Eclipse, IntelliJ, etc.).
+2. Add the necessary dependencies for Selenium WebDriver, Cucumber, and JUnit in the pom.xml file.
+3. Create a new package for step definitions and feature files.
+4. Create a feature file for each regression test case with the defined scenarios in Gherkin syntax.
+
+RegressionTestCase1.feature:
+```gherkin
+Feature: Verify all required fields are present
+
+Scenario: Verify all required fields are present on the vehicle information input screen
+  Given User is on the vehicle information input screen
+  Then Verify the presence of VIN, License Plate, Make, Model, Mileage, First Registration Date, Maker Warranty End Date fields
+  And All required fields are displayed
+```
+
+RegressionTestCase2.feature:
+```gherkin
+Feature: Display warnings for non-compliant vehicle information
+
+Scenario: Display warnings for non-compliant vehicle information
+  Given User has entered vehicle information on the system
+  When Enter incomplete or incorrect vehicle information
+  Then System displays warnings for non-compliant information
+```
+
+5. Create step definition classes to map the Gherkin steps to Java code for execution.
+
+RegressionTestCase1Steps.java:
+```java
+public class RegressionTestCase1Steps {
+    @Given("User is on the vehicle information input screen")
+    public void userIsOnVehicleInformationInputScreen() {
+        // Code to navigate to the vehicle information input screen
+    }
+
+    @Then("Verify the presence of VIN, License Plate, Make, Model, Mileage, First Registration Date, Maker Warranty End Date fields")
+    public void verifyRequiredFieldsPresence() {
+        // Code to verify the presence of required fields
+    }
+
+    @And("All required fields are displayed")
+    public void verifyAllRequiredFieldsDisplayed() {
+        // Code to assert that all required fields are displayed
+    }
+}
+```
+
+RegressionTestCase2Steps.java:
+```java
+public class RegressionTestCase2Steps {
+    @Given("User has entered vehicle information on the system")
+    public void userHasEnteredVehicleInformation() {
+        // Code to enter vehicle information on the system
+    }
+
+    @When("Enter incomplete or incorrect vehicle information")
+    public void enterIncompleteOrIncorrectInformation() {
+        // Code to enter incomplete or incorrect vehicle information
+    }
+
+    @Then("System displays warnings for non-compliant information")
+    public void verifyWarningsDisplayed() {
+        // Code to verify that warnings for non-compliant information are displayed
+    }
+}
+```
+
+6. Create a TestRunner class to run the Cucumber feature files.
+
+TestRunner.java:
+```java
+import org.junit.runner.RunWith;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = "src/test/resources/features", glue = "stepdefinitions")
+public class TestRunner {
+}
+```
+
+7. Implement the necessary Selenium WebDriver code in the step definition classes to interact with the web elements on the vehicle information input screen.
+
+8. Run the TestRunner class to execute the regression test cases using the BDD framework with Java and Selenium.
+
+By following these steps, you can create automation scripts for the provided regression test cases using the BDD framework with Java and Selenium.

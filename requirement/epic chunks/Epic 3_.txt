@@ -1,0 +1,4 @@
+Epic 3:
+- Feature 3.1: UI Configuration
+- Feature 3.2: Customizable user interface
+- Feature 3.3: Theme selection options

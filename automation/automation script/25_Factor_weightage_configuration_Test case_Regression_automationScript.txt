@@ -1,0 +1,75 @@
+To automate the regression test cases using a BDD framework with Java and Selenium, we can use Cucumber for writing feature files and Gherkin syntax to define the scenarios. Below is an example implementation of the automation scripts for the provided regression test cases:
+
+1. Create a feature file (warranty_product_information.feature) with the following scenarios:
+
+```gherkin
+Feature: Warranty Product Information
+  Scenario: Verify UI fields for warranty product information
+    Given User is on the warranty product information input screen
+    When User enters all required information
+    Then All fields are displayed and can be filled in
+
+  Scenario: Display entered information for reference and editing
+    Given User has entered and stored warranty product information
+    When User navigates to the warranty product information display screen
+    Then All entered information is displayed for reference and can be edited if needed
+```
+
+2. Create step definitions for the feature file:
+
+```java
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
+public class WarrantyProductSteps {
+
+    @Given("User is on the warranty product information input screen")
+    public void userIsOnInputScreen() {
+        // Implementation to navigate to the input screen
+    }
+
+    @When("User enters all required information")
+    public void userEntersInformation() {
+        // Implementation to enter all required information
+    }
+
+    @Then("All fields are displayed and can be filled in")
+    public void verifyFieldsDisplayed() {
+        // Implementation to verify all fields are displayed
+    }
+
+    @Given("User has entered and stored warranty product information")
+    public void userHasEnteredInformation() {
+        // Implementation to store entered information
+    }
+
+    @When("User navigates to the warranty product information display screen")
+    public void userNavigatesToDisplayScreen() {
+        // Implementation to navigate to the display screen
+    }
+
+    @Then("All entered information is displayed for reference and can be edited if needed")
+    public void verifyEnteredInformationDisplayed() {
+        // Implementation to verify entered information is displayed
+    }
+}
+```
+
+3. Create a TestRunner class to execute the feature file:
+
+```java
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = "src/test/resources/warranty_product_information.feature",
+                 glue = "stepdefinitions")
+public class TestRunner {
+}
+```
+
+4. Implement the Selenium WebDriver code within the step definitions to interact with the UI elements and perform the required actions.
+
+This setup will allow you to automate the regression test cases using a BDD framework with Java and Selenium, ensuring that the core functionalities related to warranty product information input and display are tested automatically.

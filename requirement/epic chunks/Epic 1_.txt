@@ -1,0 +1,4 @@
+Epic 1:
+- Feature 1.1: Login page
+- Feature 1.2: User authentication
+- Feature 1.3: User authorization

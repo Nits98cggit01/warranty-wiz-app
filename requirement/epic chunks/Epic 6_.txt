@@ -1,0 +1,4 @@
+Epic 6:
+- Feature 6.1: Standard based coverages
+- Feature 6.2: Coverage customization options
+- Feature 6.3: Compliance with industry standards

@@ -1,0 +1,64 @@
+To automate the regression test cases using a BDD framework with Java and Selenium, we can use Cucumber for writing feature files and step definitions. Below is an example implementation of the automation scripts for the provided regression test cases:
+
+1. Create a feature file for the regression test cases (e.g., recommendations.feature):
+
+```gherkin
+Feature: AI Recommendations Feature
+
+  Scenario: AI recommendations based on input data fields
+    Given User has entered valid input data for the warranty product field
+    When AI-driven recommendations are displayed
+    Then System should provide tailored recommendations based on the input data fields
+
+  Scenario: Real-time updates of recommendations
+    Given User is entering new data for the warranty product field
+    When Recommendations are updated instantly
+    Then Recommendations should reflect the changes in real-time
+```
+
+2. Create step definitions for the feature file:
+
+```java
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
+public class RecommendationSteps {
+
+    @Given("User has entered valid input data for the warranty product field")
+    public void enterValidInputData() {
+        // Code to enter valid input data
+    }
+
+    @When("AI-driven recommendations are displayed")
+    public void displayRecommendations() {
+        // Code to check and display AI-driven recommendations
+    }
+
+    @Then("System should provide tailored recommendations based on the input data fields")
+    public void verifyTailoredRecommendations() {
+        // Code to verify tailored recommendations
+    }
+
+    @Given("User is entering new data for the warranty product field")
+    public void enterNewData() {
+        // Code to enter new data
+    }
+
+    @When("Recommendations are updated instantly")
+    public void updateRecommendations() {
+        // Code to check if recommendations are updated instantly
+    }
+
+    @Then("Recommendations should reflect the changes in real-time")
+    public void verifyRealTimeUpdates() {
+        // Code to verify real-time updates of recommendations
+    }
+}
+```
+
+3. Implement the Selenium automation scripts within the step definitions to interact with the web application and perform the test steps.
+
+4. Run the Cucumber tests to execute the automation scripts for the regression test cases.
+
+This setup allows you to automate the regression test cases using a BDD framework with Java and Selenium, ensuring that the AI-driven recommendations feature functions as expected based on the provided test scenarios.

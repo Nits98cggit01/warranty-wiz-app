@@ -1,0 +1,4 @@
+Epic 7:
+- Feature 7.1: High level requirement of the Rating on the Factors
+- Feature 7.2: Rating calculation logic
+- Feature 7.3: Factor weightage configuration

@@ -1,0 +1,77 @@
+Epic name: Vehicle Warranty Management
+Feature name: Coverage plan options
+Feature id: 2.3
+
+Test Case 1
+Test Description: User should be able to see a list of coverage plan options.
+Precondition: User is logged into the system.
+Test Steps:
+- Navigate to the coverage plan options page.
+- Check if the list of coverage plan options is displayed.
+Expected result: The user should see a list of coverage plan options.
+
+Test Case 2
+Test Description: Each coverage plan option should display details such as coverage period, cost, and included services.
+Precondition: User is on the coverage plan options page.
+Test Steps:
+- Select a coverage plan option.
+- Verify that the coverage period, cost, and included services are displayed.
+Expected result: The details of the selected coverage plan option are visible.
+
+Test Case 3
+Test Description: User should be able to select one coverage plan option.
+Precondition: User is on the coverage plan options page.
+Test Steps:
+- Click on a coverage plan option.
+- Check if the option is selected.
+Expected result: The user should be able to select one coverage plan option.
+
+Test Case 4
+Test Description: User should receive confirmation of the selected coverage plan option.
+Precondition: User has selected a coverage plan option.
+Test Steps:
+- Confirm the selected coverage plan option.
+- Verify that a confirmation message is displayed.
+Expected result: The user should receive confirmation of the selected coverage plan option.
+
+Test Case 5
+Test Description: Verify edge case - User selects the first coverage plan option.
+Precondition: User is on the coverage plan options page.
+Test Steps:
+- Click on the first coverage plan option.
+Expected result: The first coverage plan option should be selected.
+
+Test Case 6
+Test Description: Verify edge case - User selects the last coverage plan option.
+Precondition: User is on the coverage plan options page.
+Test Steps:
+- Click on the last coverage plan option.
+Expected result: The last coverage plan option should be selected.
+
+Test Case 7
+Test Description: Verify edge case - User selects multiple coverage plan options.
+Precondition: User is on the coverage plan options page.
+Test Steps:
+- Click on multiple coverage plan options.
+Expected result: Only one coverage plan option should be selected at a time.
+
+Test Case 8
+Test Description: Verify edge case - User does not select any coverage plan option.
+Precondition: User is on the coverage plan options page.
+Test Steps:
+- Proceed without selecting any coverage plan option.
+Expected result: User should not be able to proceed without selecting a coverage plan option.
+
+Test Case 9
+Test Description: Verify edge case - User selects an invalid coverage plan option.
+Precondition: User is on the coverage plan options page.
+Test Steps:
+- Click on an invalid coverage plan option.
+Expected result: User should receive an error message indicating the option is invalid.
+
+Test Case 10
+Test Description: Verify edge case - User navigates back after selecting a coverage plan option.
+Precondition: User has selected a coverage plan option.
+Test Steps:
+- Navigate back to the coverage plan options page.
+Expected result: The previously selected coverage plan option should remain selected.

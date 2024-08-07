@@ -1,0 +1,84 @@
+Epic name: Rating System Enhancement
+Feature name: High level requirement of the Rating on the Factors
+Feature id: 7.1
+
+Test Case 1
+Test Case Name: Verify clear list of factors
+Test Description: Verify that the system provides a clear list of factors considered in the rating calculation.
+Precondition: User is logged into the system.
+Test Steps:
+- Navigate to the product rating page.
+- Check if there is a visible list of factors displayed.
+Expected result: A clear list of factors is displayed on the screen.
+
+Test Case 2
+Test Case Name: Verify factor description
+Test Description: Verify that each factor has a description explaining its importance in the rating process.
+Precondition: User is on the product rating page.
+Test Steps:
+- Click on each factor to view its description.
+Expected result: Each factor has a detailed description explaining its importance.
+
+Test Case 3
+Test Case Name: Verify accessibility of factors
+Test Description: Verify that the factors are easily accessible to the user through the system interface.
+Precondition: User is on the product rating page.
+Test Steps:
+- Look for a dedicated section or tab for factors.
+Expected result: Factors are easily accessible through the interface.
+
+Test Case 4
+Test Case Name: Verify edge case - No factors listed
+Test Description: Verify the behavior when there are no factors listed for a product.
+Precondition: User is on the product rating page of a product with no factors listed.
+Test Steps:
+- Check if any message is displayed indicating no factors available.
+Expected result: A message is displayed indicating no factors available.
+
+Test Case 5
+Test Case Name: Verify edge case - Empty factor description
+Test Description: Verify the behavior when a factor has an empty description.
+Precondition: User is on the product rating page.
+Test Steps:
+- Check the description of each factor.
+Expected result: No factor has an empty description.
+
+Test Case 6
+Test Case Name: Verify edge case - Inaccessible factors
+Test Description: Verify the behavior when factors are not easily accessible through the interface.
+Precondition: User is on the product rating page.
+Test Steps:
+- Try to locate the factors section.
+Expected result: Factors are easily accessible through the interface.
+
+Test Case 7
+Test Case Name: Verify factor description length
+Test Description: Verify that the factor descriptions are not too long or too short.
+Precondition: User is on the product rating page.
+Test Steps:
+- Check the length of each factor description.
+Expected result: Factor descriptions are of appropriate length.
+
+Test Case 8
+Test Case Name: Verify factor importance
+Test Description: Verify that the importance of each factor is clearly stated in the description.
+Precondition: User is on the product rating page.
+Test Steps:
+- Read the description of each factor.
+Expected result: Importance of each factor is clearly stated.
+
+Test Case 9
+Test Case Name: Verify factor order
+Test Description: Verify that the factors are listed in a logical order.
+Precondition: User is on the product rating page.
+Test Steps:
+- Check the order in which factors are listed.
+Expected result: Factors are listed in a logical order.
+
+Test Case 10
+Test Case Name: Verify factor visibility
+Test Description: Verify that all factors are visible without scrolling.
+Precondition: User is on the product rating page.
+Test Steps:
+- Check if all factors are visible on the screen without scrolling.
+Expected result: All factors are visible without the need to scroll.

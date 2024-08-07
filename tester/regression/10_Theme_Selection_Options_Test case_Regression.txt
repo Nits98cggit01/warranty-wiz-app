@@ -1,0 +1,19 @@
+Based on the provided test cases focusing on key scenarios that cover positive flow only, the regression test cases can be identified as follows:
+
+Regression Test Case 1:
+Test Description: Verify that the selected theme is applied to the entire UI consistently.
+Precondition: User has selected a theme.
+Test Steps:
+- User selects a theme.
+- Navigate to different UI screens.
+Expected result: The selected theme should be applied consistently across all UI screens.
+
+Regression Test Case 2:
+Test Description: Verify that the selected theme persists across sessions for the user.
+Precondition: User has selected a theme.
+Test Steps:
+- User selects a theme and logs out.
+- User logs back in.
+Expected result: The selected theme should persist for the user across sessions.
+
+These two regression test cases focus on critical functionalities related to theme selection and persistence, ensuring that the core features continue to work as expected even after changes or updates are made to the application.

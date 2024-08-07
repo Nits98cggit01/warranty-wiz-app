@@ -1,0 +1,87 @@
+To automate the regression test cases using BDD framework with Java and Selenium, we can use Cucumber for writing feature files and defining step definitions. Below is an example implementation of the automation scripts for the provided regression test cases:
+
+1. Create a feature file for the regression test cases:
+
+RegressionTestCases.feature
+```gherkin
+Feature: Regression Test Cases
+
+  Scenario: AI decision support availability
+    Given User is logged into the system
+    When User navigates to the warranty product field
+    Then AI-powered decision support is still available for the warranty product field post-update
+
+  Scenario: Data fields consideration
+    Given Relevant data fields are populated by the user
+    When User inputs relevant data fields for the warranty product
+    And User requests decision support
+    Then AI-powered decision support still considers all provided data fields in the decision-making process post-update
+```
+
+2. Create step definitions for the feature file:
+
+RegressionTestSteps.java
+```java
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
+public class RegressionTestSteps {
+
+    @Given("User is logged into the system")
+    public void userIsLoggedIn() {
+        // Implement login functionality
+    }
+
+    @When("User navigates to the warranty product field")
+    public void userNavigatesToWarrantyProductField() {
+        // Implement navigation to warranty product field
+    }
+
+    @Then("AI-powered decision support is still available for the warranty product field post-update")
+    public void verifyAIDecisionSupportAvailability() {
+        // Implement verification of AI decision support availability
+    }
+
+    @Given("Relevant data fields are populated by the user")
+    public void relevantDataFieldsPopulated() {
+        // Implement populating relevant data fields
+    }
+
+    @When("User inputs relevant data fields for the warranty product")
+    public void userInputRelevantDataFields() {
+        // Implement inputting relevant data fields
+    }
+
+    @When("User requests decision support")
+    public void userRequestsDecisionSupport() {
+        // Implement requesting decision support
+    }
+
+    @Then("AI-powered decision support still considers all provided data fields in the decision-making process post-update")
+    public void verifyAIDecisionSupportDataFieldsConsideration() {
+        // Implement verification of AI decision support considering data fields
+    }
+}
+```
+
+3. Create a TestRunner class to execute the regression test cases:
+
+TestRunner.java
+```java
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = "src/test/resources/RegressionTestCases.feature",
+                 glue = "stepDefinitions")
+public class TestRunner {
+}
+```
+
+4. Implement the Selenium WebDriver code within the step definitions to interact with the web application and perform the necessary actions for each test step.
+
+5. Execute the TestRunner class to run the regression test cases using the defined feature file and step definitions.
+
+By following this approach, you can automate the provided regression test cases using the BDD framework with Java and Selenium.

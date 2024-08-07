@@ -1,0 +1,21 @@
+Based on the provided test cases focusing on positive flows, the regression test cases can be identified as follows:
+
+Regression Test Case 1:
+Test Case Name: Display Standard Warranty Coverages
+Test Description: Verify that the system displays a list of standard warranty coverages available.
+Precondition: User is logged in as a policyholder.
+Test Steps:
+- Navigate to the warranty coverages section.
+- Check if the list of standard warranty coverages is displayed.
+Expected result: The system should display a list of standard warranty coverages available.
+
+Regression Test Case 2:
+Test Case Name: View Details of Standard Coverage
+Test Description: Verify that each standard coverage includes details such as coverage type, duration, and exclusions.
+Precondition: Standard warranty coverage list is displayed.
+Test Steps:
+- Select a standard coverage option.
+- Check for coverage type, duration, and exclusions details.
+Expected result: Each standard coverage should include details such as coverage type, duration, and exclusions.
+
+These two regression test cases cover key scenarios related to displaying standard warranty coverages and viewing details of standard coverage, which are fundamental functionalities in the Warranty Coverage Management system. These cases ensure that the core features are functioning correctly after any changes or updates to the system.
